@@ -1,0 +1,2005 @@
+Program.Sub.ScreenSU.Start
+gui.Form1..create
+gui.Form1..caption("Quality Control Measurements")
+gui.Form1..size(15690,11040)
+gui.Form1..minx(0)
+gui.Form1..miny(0)
+gui.Form1..position(0,0)
+gui.Form1..event(unload,form1_unload)
+gui.Form1..alwaysontop(False)
+gui.Form1..fontname("Arial")
+gui.Form1..fontsize(8)
+gui.Form1..forecolor(0)
+gui.Form1..fontstyle(,,,,)
+gui.Form1..BackColor(-2147483633)
+gui.Form1..controlbox(True)
+gui.Form1..maxbutton(True)
+gui.Form1..minbutton(True)
+gui.Form1..mousepointer(0)
+gui.Form1..moveable(True)
+gui.Form1..sizeable(False)
+gui.Form1..ShowInTaskBar(True)
+gui.Form1..titlebar(True)
+gui.Form1.frmThk.create(frame)
+gui.Form1.frmThk.caption("Frame")
+gui.Form1.frmThk.size(7155,855)
+gui.Form1.frmThk.position(100,340)
+gui.Form1.frmThk.visible(True)
+gui.Form1.frmThk.borderstyle(0)
+gui.Form1.frmThk.fontname("Arial")
+gui.Form1.frmThk.fontsize(8)
+gui.Form1.frmIC.create(frame)
+gui.Form1.frmIC.caption("Frame")
+gui.Form1.frmIC.size(7155,855)
+gui.Form1.frmIC.position(100,1115)
+gui.Form1.frmIC.visible(True)
+gui.Form1.frmIC.borderstyle(0)
+gui.Form1.frmIC.fontname("Arial")
+gui.Form1.frmIC.fontsize(8)
+gui.Form1.frmLg.create(frame)
+gui.Form1.frmLg.caption("Frame")
+gui.Form1.frmLg.size(7155,855)
+gui.Form1.frmLg.position(100,2605)
+gui.Form1.frmLg.visible(True)
+gui.Form1.frmLg.borderstyle(0)
+gui.Form1.frmLg.fontname("Arial")
+gui.Form1.frmLg.fontsize(8)
+gui.Form1.frnWD.create(frame)
+gui.Form1.frnWD.caption("frame")
+gui.Form1.frnWD.size(7155,945)
+gui.Form1.frnWD.position(90,1845)
+gui.Form1.frnWD.visible(True)
+gui.Form1.frnWD.borderstyle(0)
+gui.Form1.frnWD.fontname("Arial")
+gui.Form1.frnWD.fontsize(8)
+gui.Form1.frmFin.create(frame)
+gui.Form1.frmFin.caption("Frame")
+gui.Form1.frmFin.size(7155,1080)
+gui.Form1.frmFin.position(7415,4075)
+gui.Form1.frmFin.visible(True)
+gui.Form1.frmFin.borderstyle(0)
+gui.Form1.frmFin.fontname("Arial")
+gui.Form1.frmFin.fontsize(8)
+gui.Form1.frmChamf.create(frame)
+gui.Form1.frmChamf.caption("Frame")
+gui.Form1.frmChamf.size(7155,855)
+gui.Form1.frmChamf.position(7425,3380)
+gui.Form1.frmChamf.visible(True)
+gui.Form1.frmChamf.borderstyle(0)
+gui.Form1.frmChamf.fontname("Arial")
+gui.Form1.frmChamf.fontsize(8)
+gui.Form1.frmRad.create(frame)
+gui.Form1.frmRad.caption("Frame")
+gui.Form1.frmRad.size(7155,855)
+gui.Form1.frmRad.position(7420,2645)
+gui.Form1.frmRad.visible(True)
+gui.Form1.frmRad.borderstyle(0)
+gui.Form1.frmRad.fontname("Arial")
+gui.Form1.frmRad.fontsize(8)
+gui.Form1.frmCSINK.create(frame)
+gui.Form1.frmCSINK.caption("C'SINK")
+gui.Form1.frmCSINK.size(7155,855)
+gui.Form1.frmCSINK.position(90,4100)
+gui.Form1.frmCSINK.visible(True)
+gui.Form1.frmCSINK.borderstyle(0)
+gui.Form1.frmCSINK.fontname("Arial")
+gui.Form1.frmCSINK.fontsize(8)
+gui.Form1.frmC'BORE.create(frame)
+gui.Form1.frmC'BORE.caption("Frame")
+gui.Form1.frmC'BORE.size(7155,855)
+gui.Form1.frmC'BORE.position(7420,320)
+gui.Form1.frmC'BORE.visible(True)
+gui.Form1.frmC'BORE.borderstyle(0)
+gui.Form1.frmC'BORE.fontname("Arial")
+gui.Form1.frmC'BORE.fontsize(8)
+gui.Form1.frmBallDim.create(frame)
+gui.Form1.frmBallDim.caption("Frame")
+gui.Form1.frmBallDim.size(7155,855)
+gui.Form1.frmBallDim.position(7420,1075)
+gui.Form1.frmBallDim.visible(True)
+gui.Form1.frmBallDim.borderstyle(0)
+gui.Form1.frmBallDim.fontname("Arial")
+gui.Form1.frmBallDim.fontsize(8)
+gui.Form1.frmClear.create(frame)
+gui.Form1.frmClear.caption("Frame")
+gui.Form1.frmClear.size(7155,855)
+gui.Form1.frmClear.position(7420,1860)
+gui.Form1.frmClear.visible(True)
+gui.Form1.frmClear.borderstyle(0)
+gui.Form1.frmClear.fontname("Arial")
+gui.Form1.frmClear.fontsize(8)
+gui.Form1.frmHole.create(frame)
+gui.Form1.frmHole.caption("Frame")
+gui.Form1.frmHole.size(7155,855)
+gui.Form1.frmHole.position(95,3380)
+gui.Form1.frmHole.visible(True)
+gui.Form1.frmHole.borderstyle(0)
+gui.Form1.frmHole.fontname("Arial")
+gui.Form1.frmHole.fontsize(8)
+gui.Form1.gsfgLimits.create(gsflexgrid)
+gui.Form1.gsfgLimits.FixedRows(0)
+gui.Form1.gsfgLimits.FixedCols(0)
+gui.Form1.gsfgLimits.visible(True)
+gui.Form1.gsfgLimits.size(6615,4050)
+gui.Form1.gsfgLimits.zorder(0)
+gui.Form1.gsfgLimits.position(45,5845)
+gui.Form1.gsfgLimits.enabled(True)
+gui.Form1.lbl1.create(label,"Quality Limits",True,1935,255,1,70,5615,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl1.defaultvalue("")
+gui.Form1.lbl1.controlgroup(0)
+gui.Form1.gsfgHist.create(gsflexgrid)
+gui.Form1.gsfgHist.FixedRows(0)
+gui.Form1.gsfgHist.FixedCols(0)
+gui.Form1.gsfgHist.visible(True)
+gui.Form1.gsfgHist.size(8385,4050)
+gui.Form1.gsfgHist.zorder(0)
+gui.Form1.gsfgHist.position(6945,5845)
+gui.Form1.gsfgHist.enabled(True)
+gui.Form1.gsfgHist.event(commandclick,gsfghist_commandclick)
+gui.Form1.cmdSave.create(button)
+gui.Form1.cmdSave.caption("Save")
+gui.Form1.cmdSave.visible(True)
+gui.Form1.cmdSave.size(855,375)
+gui.Form1.cmdSave.zorder(0)
+gui.Form1.cmdSave.position(170,5060)
+gui.Form1.cmdSave.enabled(True)
+gui.Form1.cmdSave.fontname("Arial")
+gui.Form1.cmdSave.fontsize(8)
+gui.Form1.cmdSave.event(click,cmdsave_click)
+gui.Form1.cmdSave.defaultvalue("")
+gui.Form1.cmdSave.controlgroup(0)
+gui.Form1.fgMS.create(gsflexgrid)
+gui.Form1.fgMS.FixedRows(0)
+gui.Form1.fgMS.FixedCols(0)
+gui.Form1.fgMS.visible(False)
+gui.Form1.fgMS.size(345,510)
+gui.Form1.fgMS.zorder(0)
+gui.Form1.fgMS.position(14200,9900)
+gui.Form1.fgMS.enabled(True)
+gui.Form1.lblCaption.create(label,"New Measurements",True,6540,255,1,110,155,True,0,Arial,8,-2147483633,0)
+gui.Form1.lblCaption.defaultvalue("")
+gui.Form1.lblCaption.controlgroup(0)
+gui.Form1.lbl3.create(label,"Previous Entry",True,1935,255,1,-2725,5620,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl3.defaultvalue("")
+gui.Form1.lbl3.controlgroup(0)
+gui.Form1.lbl4.create(label,"1",True,270,255,1,715,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl4.parent("frmthk")
+gui.Form1.lbl4.defaultvalue("")
+gui.Form1.lbl4.controlgroup(0)
+gui.Form1.lbl5.create(label,"2",True,105,255,1,2080,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl5.parent("frmthk")
+gui.Form1.lbl5.defaultvalue("")
+gui.Form1.lbl5.controlgroup(0)
+gui.Form1.lbl6.create(label,"3",True,240,255,1,3385,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl6.parent("frmthk")
+gui.Form1.lbl6.defaultvalue("")
+gui.Form1.lbl6.controlgroup(0)
+gui.Form1.lbl7.create(label,"4",True,210,255,1,4665,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl7.parent("frmthk")
+gui.Form1.lbl7.defaultvalue("")
+gui.Form1.lbl7.controlgroup(0)
+gui.Form1.lbl8.create(label,"5",True,1920,255,1,5965,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl8.parent("frmthk")
+gui.Form1.lbl8.defaultvalue("")
+gui.Form1.lbl8.controlgroup(0)
+gui.Form1.lbl9.create(label,"THK",True,495,255,1,115,470,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl9.parent("frmthk")
+gui.Form1.lbl9.defaultvalue("")
+gui.Form1.lbl9.controlgroup(0)
+gui.Form1.txt_thk_2.create(textbox,"",True,1215,300,0,2050,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_thk_2.parent("frmthk")
+gui.Form1.txt_thk_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_thk_2.defaultvalue("")
+gui.Form1.txt_thk_2.controlgroup(0)
+gui.Form1.txt_THK_1.create(textbox,"",True,1230,300,0,740,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_THK_1.parent("frmthk")
+gui.Form1.txt_THK_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_THK_1.defaultvalue("")
+gui.Form1.txt_THK_1.controlgroup(0)
+gui.Form1.txt_Thk_5.create(textbox,"",True,1215,300,0,5920,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_Thk_5.parent("frmthk")
+gui.Form1.txt_Thk_5.defaultvalue("")
+gui.Form1.txt_Thk_5.controlgroup(0)
+gui.Form1.txt_Thk_4.create(textbox,"",True,1215,300,0,4640,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_Thk_4.parent("frmthk")
+gui.Form1.txt_Thk_4.defaultvalue("")
+gui.Form1.txt_Thk_4.controlgroup(0)
+gui.Form1.txt_thk_3.create(textbox,"",True,1215,300,0,3360,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_thk_3.parent("frmthk")
+gui.Form1.txt_thk_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_thk_3.defaultvalue("")
+gui.Form1.txt_thk_3.controlgroup(0)
+gui.Form1.lbl10.create(label,"1",True,270,255,1,715,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl10.parent("frmic")
+gui.Form1.lbl10.defaultvalue("")
+gui.Form1.lbl10.controlgroup(0)
+gui.Form1.lbl11.create(label,"2",True,105,255,1,2080,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl11.parent("frmic")
+gui.Form1.lbl11.defaultvalue("")
+gui.Form1.lbl11.controlgroup(0)
+gui.Form1.lbl12.create(label,"3",True,240,255,1,3385,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl12.parent("frmic")
+gui.Form1.lbl12.defaultvalue("")
+gui.Form1.lbl12.controlgroup(0)
+gui.Form1.lbl13.create(label,"4",True,210,255,1,4665,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl13.parent("frmic")
+gui.Form1.lbl13.defaultvalue("")
+gui.Form1.lbl13.controlgroup(0)
+gui.Form1.lbl14.create(label,"5",True,1920,255,1,5965,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl14.parent("frmic")
+gui.Form1.lbl14.defaultvalue("")
+gui.Form1.lbl14.controlgroup(0)
+gui.Form1.lbl15.create(label,"IC",True,495,255,1,115,470,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl15.parent("frmic")
+gui.Form1.lbl15.defaultvalue("")
+gui.Form1.lbl15.controlgroup(0)
+gui.Form1.txt_IC_2.create(textbox,"",True,1215,300,0,2050,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_IC_2.parent("frmic")
+gui.Form1.txt_IC_2.defaultvalue("")
+gui.Form1.txt_IC_2.controlgroup(0)
+gui.Form1.txt_IC_1.create(textbox,"",True,1230,300,0,740,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_IC_1.parent("frmic")
+gui.Form1.txt_IC_1.defaultvalue("")
+gui.Form1.txt_IC_1.controlgroup(0)
+gui.Form1.txt_IC_5.create(textbox,"",True,1215,300,0,5920,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_IC_5.parent("frmic")
+gui.Form1.txt_IC_5.defaultvalue("")
+gui.Form1.txt_IC_5.controlgroup(0)
+gui.Form1.txt_IC_4.create(textbox,"",True,1215,300,0,4640,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_IC_4.parent("frmic")
+gui.Form1.txt_IC_4.defaultvalue("")
+gui.Form1.txt_IC_4.controlgroup(0)
+gui.Form1.txt_IC_3.create(textbox,"",True,1215,300,0,3360,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_IC_3.parent("frmic")
+gui.Form1.txt_IC_3.defaultvalue("")
+gui.Form1.txt_IC_3.controlgroup(0)
+gui.Form1.lbl16.create(label,"1",True,270,255,1,715,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl16.parent("frmlg")
+gui.Form1.lbl16.defaultvalue("")
+gui.Form1.lbl16.controlgroup(0)
+gui.Form1.lbl17.create(label,"2",True,105,255,1,2080,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl17.parent("frmlg")
+gui.Form1.lbl17.defaultvalue("")
+gui.Form1.lbl17.controlgroup(0)
+gui.Form1.lbl18.create(label,"3",True,240,255,1,3385,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl18.parent("frmlg")
+gui.Form1.lbl18.defaultvalue("")
+gui.Form1.lbl18.controlgroup(0)
+gui.Form1.lbl19.create(label,"4",True,210,255,1,4665,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl19.parent("frmlg")
+gui.Form1.lbl19.defaultvalue("")
+gui.Form1.lbl19.controlgroup(0)
+gui.Form1.lbl20.create(label,"5",True,1920,255,1,5965,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl20.parent("frmlg")
+gui.Form1.lbl20.defaultvalue("")
+gui.Form1.lbl20.controlgroup(0)
+gui.Form1.lbl21.create(label,"LG",True,495,255,1,115,500,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl21.parent("frmlg")
+gui.Form1.lbl21.defaultvalue("")
+gui.Form1.lbl21.controlgroup(0)
+gui.Form1.txt_LG_2.create(textbox,"",True,1215,300,0,2050,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_LG_2.parent("frmlg")
+gui.Form1.txt_LG_2.defaultvalue("")
+gui.Form1.txt_LG_2.controlgroup(0)
+gui.Form1.txt_LG_1.create(textbox,"",True,1230,300,0,740,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_LG_1.parent("frmlg")
+gui.Form1.txt_LG_1.defaultvalue("")
+gui.Form1.txt_LG_1.controlgroup(0)
+gui.Form1.txt_LG_5.create(textbox,"",True,1215,300,0,5920,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_LG_5.parent("frmlg")
+gui.Form1.txt_LG_5.defaultvalue("")
+gui.Form1.txt_LG_5.controlgroup(0)
+gui.Form1.txt_LG_4.create(textbox,"",True,1215,300,0,4640,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_LG_4.parent("frmlg")
+gui.Form1.txt_LG_4.defaultvalue("")
+gui.Form1.txt_LG_4.controlgroup(0)
+gui.Form1.txt_LG_3.create(textbox,"",True,1215,300,0,3360,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_LG_3.parent("frmlg")
+gui.Form1.txt_LG_3.defaultvalue("")
+gui.Form1.txt_LG_3.controlgroup(0)
+gui.Form1.lbl22.create(label,"1",True,270,255,1,715,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl22.parent("frnwd")
+gui.Form1.lbl22.defaultvalue("")
+gui.Form1.lbl22.controlgroup(0)
+gui.Form1.lbl23.create(label,"2",True,105,255,1,2080,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl23.parent("frnwd")
+gui.Form1.lbl23.defaultvalue("")
+gui.Form1.lbl23.controlgroup(0)
+gui.Form1.lbl24.create(label,"3",True,240,255,1,3385,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl24.parent("frnwd")
+gui.Form1.lbl24.defaultvalue("")
+gui.Form1.lbl24.controlgroup(0)
+gui.Form1.lbl25.create(label,"4",True,210,255,1,4665,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl25.parent("frnwd")
+gui.Form1.lbl25.defaultvalue("")
+gui.Form1.lbl25.controlgroup(0)
+gui.Form1.lbl26.create(label,"5",True,1920,255,1,5965,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl26.parent("frnwd")
+gui.Form1.lbl26.defaultvalue("")
+gui.Form1.lbl26.controlgroup(0)
+gui.Form1.lbl27.create(label,"WD",True,495,255,1,115,515,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl27.parent("frnwd")
+gui.Form1.lbl27.defaultvalue("")
+gui.Form1.lbl27.controlgroup(0)
+gui.Form1.txt_WD_2.create(textbox,"",True,1215,300,0,2050,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_WD_2.parent("frnwd")
+gui.Form1.txt_WD_2.defaultvalue("")
+gui.Form1.txt_WD_2.controlgroup(0)
+gui.Form1.txt_WD_1.create(textbox,"",True,1230,300,0,740,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_WD_1.parent("frnwd")
+gui.Form1.txt_WD_1.defaultvalue("")
+gui.Form1.txt_WD_1.controlgroup(0)
+gui.Form1.txt_WD_5.create(textbox,"",True,1215,300,0,5920,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_WD_5.parent("frnwd")
+gui.Form1.txt_WD_5.defaultvalue("")
+gui.Form1.txt_WD_5.controlgroup(0)
+gui.Form1.txt_WD_4.create(textbox,"",True,1215,300,0,4640,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_WD_4.parent("frnwd")
+gui.Form1.txt_WD_4.defaultvalue("")
+gui.Form1.txt_WD_4.controlgroup(0)
+gui.Form1.txt_WD_3.create(textbox,"",True,1215,300,0,3360,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_WD_3.parent("frnwd")
+gui.Form1.txt_WD_3.defaultvalue("")
+gui.Form1.txt_WD_3.controlgroup(0)
+gui.Form1.lbl28.create(label,"1",True,270,255,1,715,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl28.parent("frmfin")
+gui.Form1.lbl28.defaultvalue("")
+gui.Form1.lbl28.controlgroup(0)
+gui.Form1.lbl29.create(label,"2",True,105,255,1,2080,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl29.parent("frmfin")
+gui.Form1.lbl29.defaultvalue("")
+gui.Form1.lbl29.controlgroup(0)
+gui.Form1.lbl30.create(label,"3",True,240,255,1,3385,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl30.parent("frmfin")
+gui.Form1.lbl30.defaultvalue("")
+gui.Form1.lbl30.controlgroup(0)
+gui.Form1.lbl31.create(label,"4",True,210,255,1,4665,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl31.parent("frmfin")
+gui.Form1.lbl31.defaultvalue("")
+gui.Form1.lbl31.controlgroup(0)
+gui.Form1.lbl32.create(label,"5",True,1920,255,1,5965,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl32.parent("frmfin")
+gui.Form1.lbl32.defaultvalue("")
+gui.Form1.lbl32.controlgroup(0)
+gui.Form1.lbl33.create(label,"Finished Press Flat",True,585,630,1,70,245,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl33.parent("frmfin")
+gui.Form1.lbl33.defaultvalue("")
+gui.Form1.lbl33.controlgroup(0)
+gui.Form1.txt_FINISHED_PRESS_FLAT_2.create(textbox,"",True,1215,300,0,2050,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_FINISHED_PRESS_FLAT_2.parent("frmfin")
+gui.Form1.txt_FINISHED_PRESS_FLAT_2.defaultvalue("")
+gui.Form1.txt_FINISHED_PRESS_FLAT_2.controlgroup(0)
+gui.Form1.txt_FINISHED_PRESS_FLAT_1.create(textbox,"",True,1230,300,0,740,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_FINISHED_PRESS_FLAT_1.parent("frmfin")
+gui.Form1.txt_FINISHED_PRESS_FLAT_1.defaultvalue("")
+gui.Form1.txt_FINISHED_PRESS_FLAT_1.controlgroup(0)
+gui.Form1.txt_FINISHED_PRESS_FlAT_5.create(textbox,"",True,1215,300,0,5920,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_FINISHED_PRESS_FlAT_5.parent("frmfin")
+gui.Form1.txt_FINISHED_PRESS_FlAT_5.defaultvalue("")
+gui.Form1.txt_FINISHED_PRESS_FlAT_5.controlgroup(0)
+gui.Form1.txt_FINISHED_PRESS_FLAT_4.create(textbox,"",True,1215,300,0,4640,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_FINISHED_PRESS_FLAT_4.parent("frmfin")
+gui.Form1.txt_FINISHED_PRESS_FLAT_4.defaultvalue("")
+gui.Form1.txt_FINISHED_PRESS_FLAT_4.controlgroup(0)
+gui.Form1.txt_FINISHED_PRESS_FLAT_3.create(textbox,"",True,1215,300,0,3360,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_FINISHED_PRESS_FLAT_3.parent("frmfin")
+gui.Form1.txt_FINISHED_PRESS_FLAT_3.defaultvalue("")
+gui.Form1.txt_FINISHED_PRESS_FLAT_3.controlgroup(0)
+gui.Form1.lbl34.create(label,"1",True,270,255,1,715,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl34.parent("frmchamf")
+gui.Form1.lbl34.defaultvalue("")
+gui.Form1.lbl34.controlgroup(0)
+gui.Form1.lbl35.create(label,"2",True,105,255,1,2080,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl35.parent("frmchamf")
+gui.Form1.lbl35.defaultvalue("")
+gui.Form1.lbl35.controlgroup(0)
+gui.Form1.lbl36.create(label,"3",True,240,255,1,3385,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl36.parent("frmchamf")
+gui.Form1.lbl36.defaultvalue("")
+gui.Form1.lbl36.controlgroup(0)
+gui.Form1.lbl37.create(label,"4",True,210,255,1,4665,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl37.parent("frmchamf")
+gui.Form1.lbl37.defaultvalue("")
+gui.Form1.lbl37.controlgroup(0)
+gui.Form1.lbl38.create(label,"5",True,1920,255,1,5965,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl38.parent("frmchamf")
+gui.Form1.lbl38.defaultvalue("")
+gui.Form1.lbl38.controlgroup(0)
+gui.Form1.lbl39.create(label,"CHAMF",True,540,255,1,100,445,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl39.parent("frmchamf")
+gui.Form1.lbl39.defaultvalue("")
+gui.Form1.lbl39.controlgroup(0)
+gui.Form1.txt_CHAMF_2.create(textbox,"",True,1215,300,0,2050,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CHAMF_2.parent("frmchamf")
+gui.Form1.txt_CHAMF_2.defaultvalue("")
+gui.Form1.txt_CHAMF_2.controlgroup(0)
+gui.Form1.txt_CHAMF_1.create(textbox,"",True,1230,300,0,740,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CHAMF_1.parent("frmchamf")
+gui.Form1.txt_CHAMF_1.defaultvalue("")
+gui.Form1.txt_CHAMF_1.controlgroup(0)
+gui.Form1.txt_CHAMF_5.create(textbox,"",True,1215,300,0,5920,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CHAMF_5.parent("frmchamf")
+gui.Form1.txt_CHAMF_5.defaultvalue("")
+gui.Form1.txt_CHAMF_5.controlgroup(0)
+gui.Form1.txt_CHAMF_4.create(textbox,"",True,1215,300,0,4640,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CHAMF_4.parent("frmchamf")
+gui.Form1.txt_CHAMF_4.defaultvalue("")
+gui.Form1.txt_CHAMF_4.controlgroup(0)
+gui.Form1.txt_CHAMF_3.create(textbox,"",True,1215,300,0,3360,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CHAMF_3.parent("frmchamf")
+gui.Form1.txt_CHAMF_3.defaultvalue("")
+gui.Form1.txt_CHAMF_3.controlgroup(0)
+gui.Form1.lbl40.create(label,"1",True,270,255,1,715,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl40.parent("frmrad")
+gui.Form1.lbl40.defaultvalue("")
+gui.Form1.lbl40.controlgroup(0)
+gui.Form1.lbl41.create(label,"2",True,105,255,1,2080,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl41.parent("frmrad")
+gui.Form1.lbl41.defaultvalue("")
+gui.Form1.lbl41.controlgroup(0)
+gui.Form1.lbl42.create(label,"3",True,240,255,1,3385,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl42.parent("frmrad")
+gui.Form1.lbl42.defaultvalue("")
+gui.Form1.lbl42.controlgroup(0)
+gui.Form1.lbl43.create(label,"4",True,210,255,1,4665,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl43.parent("frmrad")
+gui.Form1.lbl43.defaultvalue("")
+gui.Form1.lbl43.controlgroup(0)
+gui.Form1.lbl44.create(label,"5",True,1920,255,1,5965,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl44.parent("frmrad")
+gui.Form1.lbl44.defaultvalue("")
+gui.Form1.lbl44.controlgroup(0)
+gui.Form1.lbl45.create(label,"RAD",True,495,255,1,115,425,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl45.parent("frmrad")
+gui.Form1.lbl45.defaultvalue("")
+gui.Form1.lbl45.controlgroup(0)
+gui.Form1.txt_RAD_2.create(textbox,"",True,1215,300,0,2050,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_RAD_2.parent("frmrad")
+gui.Form1.txt_RAD_2.defaultvalue("")
+gui.Form1.txt_RAD_2.controlgroup(0)
+gui.Form1.txt_RAD_1.create(textbox,"",True,1230,300,0,740,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_RAD_1.parent("frmrad")
+gui.Form1.txt_RAD_1.defaultvalue("")
+gui.Form1.txt_RAD_1.controlgroup(0)
+gui.Form1.txt_RAD_5.create(textbox,"",True,1215,300,0,5920,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_RAD_5.parent("frmrad")
+gui.Form1.txt_RAD_5.defaultvalue("")
+gui.Form1.txt_RAD_5.controlgroup(0)
+gui.Form1.txt_RAD_4.create(textbox,"",True,1215,300,0,4640,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_RAD_4.parent("frmrad")
+gui.Form1.txt_RAD_4.defaultvalue("")
+gui.Form1.txt_RAD_4.controlgroup(0)
+gui.Form1.txt_RAD_3.create(textbox,"",True,1215,300,0,3360,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_RAD_3.parent("frmrad")
+gui.Form1.txt_RAD_3.defaultvalue("")
+gui.Form1.txt_RAD_3.controlgroup(0)
+gui.Form1.lbl46.create(label,"1",True,270,255,1,715,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl46.parent("frmcsink")
+gui.Form1.lbl46.defaultvalue("")
+gui.Form1.lbl46.controlgroup(0)
+gui.Form1.lbl47.create(label,"2",True,105,255,1,2080,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl47.parent("frmcsink")
+gui.Form1.lbl47.defaultvalue("")
+gui.Form1.lbl47.controlgroup(0)
+gui.Form1.lbl48.create(label,"3",True,240,255,1,3385,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl48.parent("frmcsink")
+gui.Form1.lbl48.defaultvalue("")
+gui.Form1.lbl48.controlgroup(0)
+gui.Form1.lbl49.create(label,"4",True,210,255,1,4665,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl49.parent("frmcsink")
+gui.Form1.lbl49.defaultvalue("")
+gui.Form1.lbl49.controlgroup(0)
+gui.Form1.lbl50.create(label,"5",True,1920,255,1,5965,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl50.parent("frmcsink")
+gui.Form1.lbl50.defaultvalue("")
+gui.Form1.lbl50.controlgroup(0)
+gui.Form1.lbl51.create(label,"C'SINK",True,495,255,1,115,470,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl51.parent("frmcsink")
+gui.Form1.lbl51.defaultvalue("")
+gui.Form1.lbl51.controlgroup(0)
+gui.Form1.txt_CSINK_2.create(textbox,"",True,1215,300,0,2050,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CSINK_2.parent("frmcsink")
+gui.Form1.txt_CSINK_2.defaultvalue("")
+gui.Form1.txt_CSINK_2.controlgroup(0)
+gui.Form1.txt_CSINK_1.create(textbox,"",True,1230,300,0,740,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CSINK_1.parent("frmcsink")
+gui.Form1.txt_CSINK_1.defaultvalue("")
+gui.Form1.txt_CSINK_1.controlgroup(0)
+gui.Form1.txt_CSINK_5.create(textbox,"",True,1215,300,0,5920,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CSINK_5.parent("frmcsink")
+gui.Form1.txt_CSINK_5.defaultvalue("")
+gui.Form1.txt_CSINK_5.controlgroup(0)
+gui.Form1.txt_CSINK_4.create(textbox,"",True,1215,300,0,4640,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CSINK_4.parent("frmcsink")
+gui.Form1.txt_CSINK_4.defaultvalue("")
+gui.Form1.txt_CSINK_4.controlgroup(0)
+gui.Form1.txt_CSINK_3.create(textbox,"",True,1215,300,0,3360,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CSINK_3.parent("frmcsink")
+gui.Form1.txt_CSINK_3.defaultvalue("")
+gui.Form1.txt_CSINK_3.controlgroup(0)
+gui.Form1.lbl52.create(label,"1",True,270,255,1,715,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl52.parent("frmc'bore")
+gui.Form1.lbl52.defaultvalue("")
+gui.Form1.lbl52.controlgroup(0)
+gui.Form1.lbl53.create(label,"2",True,105,255,1,2080,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl53.parent("frmc'bore")
+gui.Form1.lbl53.defaultvalue("")
+gui.Form1.lbl53.controlgroup(0)
+gui.Form1.lbl54.create(label,"3",True,240,255,1,3385,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl54.parent("frmc'bore")
+gui.Form1.lbl54.defaultvalue("")
+gui.Form1.lbl54.controlgroup(0)
+gui.Form1.lbl55.create(label,"4",True,210,255,1,4665,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl55.parent("frmc'bore")
+gui.Form1.lbl55.defaultvalue("")
+gui.Form1.lbl55.controlgroup(0)
+gui.Form1.lbl56.create(label,"5",True,1920,255,1,5935,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl56.parent("frmc'bore")
+gui.Form1.lbl56.defaultvalue("")
+gui.Form1.lbl56.controlgroup(0)
+gui.Form1.lbl57.create(label,"C'BORE",True,600,255,1,70,470,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl57.parent("frmc'bore")
+gui.Form1.lbl57.defaultvalue("")
+gui.Form1.lbl57.controlgroup(0)
+gui.Form1.txt_CBORE_2.create(textbox,"",True,1215,300,0,2050,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CBORE_2.parent("frmc'bore")
+gui.Form1.txt_CBORE_2.defaultvalue("")
+gui.Form1.txt_CBORE_2.controlgroup(0)
+gui.Form1.txt_CBORE_1.create(textbox,"",True,1230,300,0,740,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CBORE_1.parent("frmc'bore")
+gui.Form1.txt_CBORE_1.defaultvalue("")
+gui.Form1.txt_CBORE_1.controlgroup(0)
+gui.Form1.txt_CBORE_5.create(textbox,"",True,1215,300,0,5920,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CBORE_5.parent("frmc'bore")
+gui.Form1.txt_CBORE_5.defaultvalue("")
+gui.Form1.txt_CBORE_5.controlgroup(0)
+gui.Form1.txt_CBORE_4.create(textbox,"",True,1215,300,0,4640,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CBORE_4.parent("frmc'bore")
+gui.Form1.txt_CBORE_4.defaultvalue("")
+gui.Form1.txt_CBORE_4.controlgroup(0)
+gui.Form1.txt_CBORE_3.create(textbox,"",True,1215,300,0,3360,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CBORE_3.parent("frmc'bore")
+gui.Form1.txt_CBORE_3.defaultvalue("")
+gui.Form1.txt_CBORE_3.controlgroup(0)
+gui.Form1.lbl58.create(label,"1",True,270,255,1,715,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl58.parent("frmballdim")
+gui.Form1.lbl58.defaultvalue("")
+gui.Form1.lbl58.controlgroup(0)
+gui.Form1.lbl59.create(label,"2",True,105,255,1,2080,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl59.parent("frmballdim")
+gui.Form1.lbl59.defaultvalue("")
+gui.Form1.lbl59.controlgroup(0)
+gui.Form1.lbl60.create(label,"3",True,240,255,1,3385,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl60.parent("frmballdim")
+gui.Form1.lbl60.defaultvalue("")
+gui.Form1.lbl60.controlgroup(0)
+gui.Form1.lbl61.create(label,"4",True,210,255,1,4665,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl61.parent("frmballdim")
+gui.Form1.lbl61.defaultvalue("")
+gui.Form1.lbl61.controlgroup(0)
+gui.Form1.lbl62.create(label,"5",True,1920,255,1,5965,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl62.parent("frmballdim")
+gui.Form1.lbl62.defaultvalue("")
+gui.Form1.lbl62.controlgroup(0)
+gui.Form1.lbl63.create(label,"BALLDIM",True,675,255,1,40,470,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl63.parent("frmballdim")
+gui.Form1.lbl63.defaultvalue("")
+gui.Form1.lbl63.controlgroup(0)
+gui.Form1.txt_BALLDIM_2.create(textbox,"",True,1215,300,0,2050,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_BALLDIM_2.parent("frmballdim")
+gui.Form1.txt_BALLDIM_2.defaultvalue("")
+gui.Form1.txt_BALLDIM_2.controlgroup(0)
+gui.Form1.txt_BALLDIM_1.create(textbox,"",True,1230,300,0,740,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_BALLDIM_1.parent("frmballdim")
+gui.Form1.txt_BALLDIM_1.defaultvalue("")
+gui.Form1.txt_BALLDIM_1.controlgroup(0)
+gui.Form1.txt_BALLDIM_5.create(textbox,"",True,1215,300,0,5920,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_BALLDIM_5.parent("frmballdim")
+gui.Form1.txt_BALLDIM_5.defaultvalue("")
+gui.Form1.txt_BALLDIM_5.controlgroup(0)
+gui.Form1.txt_BALLDIM_4.create(textbox,"",True,1215,300,0,4640,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_BALLDIM_4.parent("frmballdim")
+gui.Form1.txt_BALLDIM_4.defaultvalue("")
+gui.Form1.txt_BALLDIM_4.controlgroup(0)
+gui.Form1.txt_BALLDIM_3.create(textbox,"",True,1215,300,0,3360,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_BALLDIM_3.parent("frmballdim")
+gui.Form1.txt_BALLDIM_3.defaultvalue("")
+gui.Form1.txt_BALLDIM_3.controlgroup(0)
+gui.Form1.lbl64.create(label,"1",True,270,255,1,715,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl64.parent("frmclear")
+gui.Form1.lbl64.defaultvalue("")
+gui.Form1.lbl64.controlgroup(0)
+gui.Form1.lbl65.create(label,"2",True,105,255,1,2080,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl65.parent("frmclear")
+gui.Form1.lbl65.defaultvalue("")
+gui.Form1.lbl65.controlgroup(0)
+gui.Form1.lbl66.create(label,"3",True,240,255,1,3385,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl66.parent("frmclear")
+gui.Form1.lbl66.defaultvalue("")
+gui.Form1.lbl66.controlgroup(0)
+gui.Form1.lbl67.create(label,"4",True,210,255,1,4665,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl67.parent("frmclear")
+gui.Form1.lbl67.defaultvalue("")
+gui.Form1.lbl67.controlgroup(0)
+gui.Form1.lbl68.create(label,"5",True,1920,255,1,5965,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl68.parent("frmclear")
+gui.Form1.lbl68.defaultvalue("")
+gui.Form1.lbl68.controlgroup(0)
+gui.Form1.lbl69.create(label,"CLEAR",True,525,255,1,70,455,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl69.parent("frmclear")
+gui.Form1.lbl69.defaultvalue("")
+gui.Form1.lbl69.controlgroup(0)
+gui.Form1.txt_CLEAR_2.create(textbox,"",True,1215,300,0,2050,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CLEAR_2.parent("frmclear")
+gui.Form1.txt_CLEAR_2.defaultvalue("")
+gui.Form1.txt_CLEAR_2.controlgroup(0)
+gui.Form1.txt_CLEAR_1.create(textbox,"",True,1230,300,0,740,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CLEAR_1.parent("frmclear")
+gui.Form1.txt_CLEAR_1.defaultvalue("")
+gui.Form1.txt_CLEAR_1.controlgroup(0)
+gui.Form1.txt_CLEAR_5.create(textbox,"",True,1215,300,0,5920,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CLEAR_5.parent("frmclear")
+gui.Form1.txt_CLEAR_5.defaultvalue("")
+gui.Form1.txt_CLEAR_5.controlgroup(0)
+gui.Form1.txt_CLEAR_4.create(textbox,"",True,1215,300,0,4640,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CLEAR_4.parent("frmclear")
+gui.Form1.txt_CLEAR_4.defaultvalue("")
+gui.Form1.txt_CLEAR_4.controlgroup(0)
+gui.Form1.txt_CLEAR_3.create(textbox,"",True,1215,300,0,3360,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_CLEAR_3.parent("frmclear")
+gui.Form1.txt_CLEAR_3.defaultvalue("")
+gui.Form1.txt_CLEAR_3.controlgroup(0)
+gui.Form1.lbl70.create(label,"1",True,270,255,1,715,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl70.parent("frmhole")
+gui.Form1.lbl70.defaultvalue("")
+gui.Form1.lbl70.controlgroup(0)
+gui.Form1.lbl71.create(label,"2",True,105,255,1,2080,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl71.parent("frmhole")
+gui.Form1.lbl71.defaultvalue("")
+gui.Form1.lbl71.controlgroup(0)
+gui.Form1.lbl72.create(label,"3",True,240,255,1,3385,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl72.parent("frmhole")
+gui.Form1.lbl72.defaultvalue("")
+gui.Form1.lbl72.controlgroup(0)
+gui.Form1.lbl73.create(label,"4",True,210,255,1,4665,220,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl73.parent("frmhole")
+gui.Form1.lbl73.defaultvalue("")
+gui.Form1.lbl73.controlgroup(0)
+gui.Form1.lbl74.create(label,"5",True,1920,255,1,5965,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl74.parent("frmhole")
+gui.Form1.lbl74.defaultvalue("")
+gui.Form1.lbl74.controlgroup(0)
+gui.Form1.lbl75.create(label,"Hole",True,495,255,1,115,470,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl75.parent("frmhole")
+gui.Form1.lbl75.defaultvalue("")
+gui.Form1.lbl75.controlgroup(0)
+gui.Form1.txt_HOLE_2.create(textbox,"",True,1215,300,0,2050,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_HOLE_2.parent("frmhole")
+gui.Form1.txt_HOLE_2.defaultvalue("")
+gui.Form1.txt_HOLE_2.controlgroup(0)
+gui.Form1.txt_HOLE_1.create(textbox,"",True,1230,300,0,740,440,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_HOLE_1.parent("frmhole")
+gui.Form1.txt_HOLE_1.defaultvalue("")
+gui.Form1.txt_HOLE_1.controlgroup(0)
+gui.Form1.txt_HOLE_5.create(textbox,"",True,1215,300,0,5920,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_HOLE_5.parent("frmhole")
+gui.Form1.txt_HOLE_5.defaultvalue("")
+gui.Form1.txt_HOLE_5.controlgroup(0)
+gui.Form1.txt_HOLE_4.create(textbox,"",True,1215,300,0,4640,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_HOLE_4.parent("frmhole")
+gui.Form1.txt_HOLE_4.defaultvalue("")
+gui.Form1.txt_HOLE_4.controlgroup(0)
+gui.Form1.txt_HOLE_3.create(textbox,"",True,1215,300,0,3360,415,True,0,Arial,8,-2147483643,1)
+gui.Form1.txt_HOLE_3.parent("frmhole")
+gui.Form1.txt_HOLE_3.defaultvalue("")
+gui.Form1.txt_HOLE_3.controlgroup(0)
+gui.Form1.lbl76.create(label,"Previous Entry",True,1935,255,1,6965,5630,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl76.defaultvalue("")
+gui.Form1.lbl76.controlgroup(0)
+gui.Form1.cmdClear.create(button)
+gui.Form1.cmdClear.caption("Clear")
+gui.Form1.cmdClear.visible(False)
+gui.Form1.cmdClear.size(855,375)
+gui.Form1.cmdClear.zorder(0)
+gui.Form1.cmdClear.position(1100,5055)
+gui.Form1.cmdClear.enabled(True)
+gui.Form1.cmdClear.fontname("Arial")
+gui.Form1.cmdClear.fontsize(8)
+gui.Form1.cmdClear.event(click,cmdclear_click)
+gui.Form1.cmdClear.defaultvalue("")
+gui.Form1.cmdClear.controlgroup(0)
+gui.Form1.txt_THK_1.tabstop(True)
+gui.Form1.txt_THK_1.tabindex(1)
+gui.Form1.txt_thk_2.tabstop(True)
+gui.Form1.txt_thk_2.tabindex(2)
+gui.Form1.txt_thk_3.tabstop(True)
+gui.Form1.txt_thk_3.tabindex(3)
+gui.Form1.txt_Thk_4.tabstop(True)
+gui.Form1.txt_Thk_4.tabindex(4)
+gui.Form1.txt_Thk_5.tabstop(True)
+gui.Form1.txt_Thk_5.tabindex(5)
+gui.Form1.txt_CBORE_1.tabstop(True)
+gui.Form1.txt_CBORE_1.tabindex(6)
+gui.Form1.txt_CBORE_2.tabstop(True)
+gui.Form1.txt_CBORE_2.tabindex(7)
+gui.Form1.txt_CBORE_3.tabstop(True)
+gui.Form1.txt_CBORE_3.tabindex(8)
+gui.Form1.txt_CBORE_4.tabstop(True)
+gui.Form1.txt_CBORE_4.tabindex(9)
+gui.Form1.txt_CBORE_5.tabstop(True)
+gui.Form1.txt_CBORE_5.tabindex(10)
+gui.Form1.txt_IC_1.tabstop(True)
+gui.Form1.txt_IC_1.tabindex(11)
+gui.Form1.txt_IC_2.tabstop(True)
+gui.Form1.txt_IC_2.tabindex(12)
+gui.Form1.txt_IC_3.tabstop(True)
+gui.Form1.txt_IC_3.tabindex(13)
+gui.Form1.txt_IC_4.tabstop(True)
+gui.Form1.txt_IC_4.tabindex(14)
+gui.Form1.txt_IC_5.tabstop(True)
+gui.Form1.txt_IC_5.tabindex(15)
+gui.Form1.txt_BALLDIM_1.tabstop(True)
+gui.Form1.txt_BALLDIM_1.tabindex(16)
+gui.Form1.txt_BALLDIM_2.tabstop(True)
+gui.Form1.txt_BALLDIM_2.tabindex(17)
+gui.Form1.txt_BALLDIM_3.tabstop(True)
+gui.Form1.txt_BALLDIM_3.tabindex(18)
+gui.Form1.txt_BALLDIM_4.tabstop(True)
+gui.Form1.txt_BALLDIM_4.tabindex(19)
+gui.Form1.txt_BALLDIM_5.tabstop(True)
+gui.Form1.txt_BALLDIM_5.tabindex(20)
+gui.Form1.txt_WD_1.tabstop(True)
+gui.Form1.txt_WD_1.tabindex(21)
+gui.Form1.txt_WD_2.tabstop(True)
+gui.Form1.txt_WD_2.tabindex(22)
+gui.Form1.txt_WD_3.tabstop(True)
+gui.Form1.txt_WD_3.tabindex(23)
+gui.Form1.txt_WD_4.tabstop(True)
+gui.Form1.txt_WD_4.tabindex(24)
+gui.Form1.txt_WD_5.tabstop(True)
+gui.Form1.txt_WD_5.tabindex(25)
+gui.Form1.txt_CLEAR_1.tabstop(True)
+gui.Form1.txt_CLEAR_1.tabindex(26)
+gui.Form1.txt_CLEAR_2.tabstop(True)
+gui.Form1.txt_CLEAR_2.tabindex(27)
+gui.Form1.txt_CLEAR_3.tabstop(True)
+gui.Form1.txt_CLEAR_3.tabindex(28)
+gui.Form1.txt_CLEAR_4.tabstop(True)
+gui.Form1.txt_CLEAR_4.tabindex(29)
+gui.Form1.txt_CLEAR_5.tabstop(True)
+gui.Form1.txt_CLEAR_5.tabindex(30)
+gui.Form1.txt_LG_1.tabstop(True)
+gui.Form1.txt_LG_1.tabindex(31)
+gui.Form1.txt_LG_2.tabstop(True)
+gui.Form1.txt_LG_2.tabindex(32)
+gui.Form1.txt_LG_3.tabstop(True)
+gui.Form1.txt_LG_3.tabindex(33)
+gui.Form1.txt_LG_4.tabstop(True)
+gui.Form1.txt_LG_4.tabindex(34)
+gui.Form1.txt_LG_5.tabstop(True)
+gui.Form1.txt_LG_5.tabindex(35)
+gui.Form1.txt_RAD_1.tabstop(True)
+gui.Form1.txt_RAD_1.tabindex(36)
+gui.Form1.txt_RAD_2.tabstop(True)
+gui.Form1.txt_RAD_2.tabindex(37)
+gui.Form1.txt_RAD_3.tabstop(True)
+gui.Form1.txt_RAD_3.tabindex(38)
+gui.Form1.txt_RAD_4.tabstop(True)
+gui.Form1.txt_RAD_4.tabindex(39)
+gui.Form1.txt_RAD_5.tabstop(True)
+gui.Form1.txt_RAD_5.tabindex(40)
+gui.Form1.txt_HOLE_1.tabstop(True)
+gui.Form1.txt_HOLE_1.tabindex(41)
+gui.Form1.txt_HOLE_2.tabstop(True)
+gui.Form1.txt_HOLE_2.tabindex(42)
+gui.Form1.txt_HOLE_3.tabstop(True)
+gui.Form1.txt_HOLE_3.tabindex(43)
+gui.Form1.txt_HOLE_4.tabstop(True)
+gui.Form1.txt_HOLE_4.tabindex(44)
+gui.Form1.txt_HOLE_5.tabstop(True)
+gui.Form1.txt_HOLE_5.tabindex(45)
+gui.Form1.txt_CHAMF_1.tabstop(True)
+gui.Form1.txt_CHAMF_1.tabindex(46)
+gui.Form1.txt_CHAMF_2.tabstop(True)
+gui.Form1.txt_CHAMF_2.tabindex(47)
+gui.Form1.txt_CHAMF_3.tabstop(True)
+gui.Form1.txt_CHAMF_3.tabindex(48)
+gui.Form1.txt_CHAMF_4.tabstop(True)
+gui.Form1.txt_CHAMF_4.tabindex(49)
+gui.Form1.txt_CHAMF_5.tabstop(True)
+gui.Form1.txt_CHAMF_5.tabindex(50)
+gui.Form1.txt_CSINK_1.tabstop(True)
+gui.Form1.txt_CSINK_1.tabindex(51)
+gui.Form1.txt_CSINK_2.tabstop(True)
+gui.Form1.txt_CSINK_2.tabindex(52)
+gui.Form1.txt_CSINK_3.tabstop(True)
+gui.Form1.txt_CSINK_3.tabindex(53)
+gui.Form1.txt_CSINK_4.tabstop(True)
+gui.Form1.txt_CSINK_4.tabindex(54)
+gui.Form1.txt_CSINK_5.tabstop(True)
+gui.Form1.txt_CSINK_5.tabindex(55)
+gui.Form1.txt_FINISHED_PRESS_FLAT_1.tabstop(True)
+gui.Form1.txt_FINISHED_PRESS_FLAT_1.tabindex(56)
+gui.Form1.txt_FINISHED_PRESS_FLAT_2.tabstop(True)
+gui.Form1.txt_FINISHED_PRESS_FLAT_2.tabindex(57)
+gui.Form1.txt_FINISHED_PRESS_FLAT_3.tabstop(True)
+gui.Form1.txt_FINISHED_PRESS_FLAT_3.tabindex(58)
+gui.Form1.txt_FINISHED_PRESS_FLAT_4.tabstop(True)
+gui.Form1.txt_FINISHED_PRESS_FLAT_4.tabindex(59)
+gui.Form1.txt_FINISHED_PRESS_FlAT_5.tabstop(True)
+gui.Form1.txt_FINISHED_PRESS_FlAT_5.tabindex(60)
+gui.Form1.cmdSave.tabstop(True)
+gui.Form1.cmdSave.tabindex(61)
+gui.Form1.cmdClear.tabstop(True)
+gui.Form1.cmdClear.tabindex(305)
+gui.Form1.txt_FINISHED_PRESS_FLAT_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_FINISHED_PRESS_FLAT_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_FINISHED_PRESS_FLAT_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_FINISHED_PRESS_FLAT_4.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_FINISHED_PRESS_FLAT_5.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_THK_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_THK_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_THK_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_THK_4.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_THK_5.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_IC_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_IC_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_IC_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_IC_4.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_IC_5.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_WD_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_WD_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_WD_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_WD_4.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_WD_5.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_LG_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_LG_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_LG_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_LG_4.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_LG_5.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_HOLE_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_HOLE_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_HOLE_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_HOLE_4.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_HOLE_5.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CSINK_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CSINK_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CSINK_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CSINK_4.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CSINK_5.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CBORE_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CBORE_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CBORE_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CBORE_4.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CBORE_5.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_BALLDIM_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_BALLDIM_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_BALLDIM_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_BALLDIM_4.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_BALLDIM_5.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_RAD_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_RAD_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_RAD_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_RAD_4.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_RAD_5.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CLEAR_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CLEAR_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CLEAR_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CLEAR_4.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CLEAR_5.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CHAMF_1.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CHAMF_2.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CHAMF_3.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CHAMF_4.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_CHAMF_5.event(gotfocus,txt_gotfocus)
+gui.Form1.txt_FINISHED_PRESS_FLAT_1.NumericOnly(1)
+gui.Form1.txt_FINISHED_PRESS_FLAT_2.NumericOnly(1)
+gui.Form1.txt_FINISHED_PRESS_FLAT_3.NumericOnly(1)
+gui.Form1.txt_FINISHED_PRESS_FLAT_4.NumericOnly(1)
+gui.Form1.txt_FINISHED_PRESS_FLAT_5.NumericOnly(1)
+gui.Form1.txt_THK_1.NumericOnly(1)
+gui.Form1.txt_THK_2.NumericOnly(1)
+gui.Form1.txt_THK_3.NumericOnly(1)
+gui.Form1.txt_THK_4.NumericOnly(1)
+gui.Form1.txt_THK_5.NumericOnly(1)
+gui.Form1.txt_IC_1.NumericOnly(1)
+gui.Form1.txt_IC_2.NumericOnly(1)
+gui.Form1.txt_IC_3.NumericOnly(1)
+gui.Form1.txt_IC_4.NumericOnly(1)
+gui.Form1.txt_IC_5.NumericOnly(1)
+gui.Form1.txt_WD_1.NumericOnly(1)
+gui.Form1.txt_WD_2.NumericOnly(1)
+gui.Form1.txt_WD_3.NumericOnly(1)
+gui.Form1.txt_WD_4.NumericOnly(1)
+gui.Form1.txt_WD_5.NumericOnly(1)
+gui.Form1.txt_LG_1.NumericOnly(1)
+gui.Form1.txt_LG_2.NumericOnly(1)
+gui.Form1.txt_LG_3.NumericOnly(1)
+gui.Form1.txt_LG_4.NumericOnly(1)
+gui.Form1.txt_LG_5.NumericOnly(1)
+gui.Form1.txt_HOLE_1.NumericOnly(1)
+gui.Form1.txt_HOLE_2.NumericOnly(1)
+gui.Form1.txt_HOLE_3.NumericOnly(1)
+gui.Form1.txt_HOLE_4.NumericOnly(1)
+gui.Form1.txt_HOLE_5.NumericOnly(1)
+gui.Form1.txt_CSINK_1.NumericOnly(1)
+gui.Form1.txt_CSINK_2.NumericOnly(1)
+gui.Form1.txt_CSINK_3.NumericOnly(1)
+gui.Form1.txt_CSINK_4.NumericOnly(1)
+gui.Form1.txt_CSINK_5.NumericOnly(1)
+gui.Form1.txt_CBORE_1.NumericOnly(1)
+gui.Form1.txt_CBORE_2.NumericOnly(1)
+gui.Form1.txt_CBORE_3.NumericOnly(1)
+gui.Form1.txt_CBORE_4.NumericOnly(1)
+gui.Form1.txt_CBORE_5.NumericOnly(1)
+gui.Form1.txt_BALLDIM_1.NumericOnly(1)
+gui.Form1.txt_BALLDIM_2.NumericOnly(1)
+gui.Form1.txt_BALLDIM_3.NumericOnly(1)
+gui.Form1.txt_BALLDIM_4.NumericOnly(1)
+gui.Form1.txt_BALLDIM_5.NumericOnly(1)
+gui.Form1.txt_RAD_1.NumericOnly(1)
+gui.Form1.txt_RAD_2.NumericOnly(1)
+gui.Form1.txt_RAD_3.NumericOnly(1)
+gui.Form1.txt_RAD_4.NumericOnly(1)
+gui.Form1.txt_RAD_5.NumericOnly(1)
+gui.Form1.txt_CLEAR_1.NumericOnly(1)
+gui.Form1.txt_CLEAR_2.NumericOnly(1)
+gui.Form1.txt_CLEAR_3.NumericOnly(1)
+gui.Form1.txt_CLEAR_4.NumericOnly(1)
+gui.Form1.txt_CLEAR_5.NumericOnly(1)
+gui.Form1.txt_CHAMF_1.NumericOnly(1)
+gui.Form1.txt_CHAMF_2.NumericOnly(1)
+gui.Form1.txt_CHAMF_3.NumericOnly(1)
+gui.Form1.txt_CHAMF_4.NumericOnly(1)
+gui.Form1.txt_CHAMF_5.NumericOnly(1)
+gui.Form1.txt_FINISHED_PRESS_FLAT_1.MaxLength(16)
+gui.Form1.txt_FINISHED_PRESS_FLAT_2.MaxLength(16)
+gui.Form1.txt_FINISHED_PRESS_FLAT_3.MaxLength(16)
+gui.Form1.txt_FINISHED_PRESS_FLAT_4.MaxLength(16)
+gui.Form1.txt_FINISHED_PRESS_FLAT_5.MaxLength(16)
+gui.Form1.txt_THK_1.MaxLength(16)
+gui.Form1.txt_THK_2.MaxLength(16)
+gui.Form1.txt_THK_3.MaxLength(16)
+gui.Form1.txt_THK_4.MaxLength(16)
+gui.Form1.txt_THK_5.MaxLength(16)
+gui.Form1.txt_IC_1.MaxLength(16)
+gui.Form1.txt_IC_2.MaxLength(16)
+gui.Form1.txt_IC_3.MaxLength(16)
+gui.Form1.txt_IC_4.MaxLength(16)
+gui.Form1.txt_IC_5.MaxLength(16)
+gui.Form1.txt_WD_1.MaxLength(16)
+gui.Form1.txt_WD_2.MaxLength(16)
+gui.Form1.txt_WD_3.MaxLength(16)
+gui.Form1.txt_WD_4.MaxLength(16)
+gui.Form1.txt_WD_5.MaxLength(16)
+gui.Form1.txt_LG_1.MaxLength(16)
+gui.Form1.txt_LG_2.MaxLength(16)
+gui.Form1.txt_LG_3.MaxLength(16)
+gui.Form1.txt_LG_4.MaxLength(16)
+gui.Form1.txt_LG_5.MaxLength(16)
+gui.Form1.txt_HOLE_1.MaxLength(16)
+gui.Form1.txt_HOLE_2.MaxLength(16)
+gui.Form1.txt_HOLE_3.MaxLength(16)
+gui.Form1.txt_HOLE_4.MaxLength(16)
+gui.Form1.txt_HOLE_5.MaxLength(16)
+gui.Form1.txt_CSINK_1.MaxLength(16)
+gui.Form1.txt_CSINK_2.MaxLength(16)
+gui.Form1.txt_CSINK_3.MaxLength(16)
+gui.Form1.txt_CSINK_4.MaxLength(16)
+gui.Form1.txt_CSINK_5.MaxLength(16)
+gui.Form1.txt_CBORE_1.MaxLength(16)
+gui.Form1.txt_CBORE_2.MaxLength(16)
+gui.Form1.txt_CBORE_3.MaxLength(16)
+gui.Form1.txt_CBORE_4.MaxLength(16)
+gui.Form1.txt_CBORE_5.MaxLength(16)
+gui.Form1.txt_BALLDIM_1.MaxLength(16)
+gui.Form1.txt_BALLDIM_2.MaxLength(16)
+gui.Form1.txt_BALLDIM_3.MaxLength(16)
+gui.Form1.txt_BALLDIM_4.MaxLength(16)
+gui.Form1.txt_BALLDIM_5.MaxLength(16)
+gui.Form1.txt_RAD_1.MaxLength(16)
+gui.Form1.txt_RAD_2.MaxLength(16)
+gui.Form1.txt_RAD_3.MaxLength(16)
+gui.Form1.txt_RAD_4.MaxLength(16)
+gui.Form1.txt_RAD_5.MaxLength(16)
+gui.Form1.txt_CLEAR_1.MaxLength(16)
+gui.Form1.txt_CLEAR_2.MaxLength(16)
+gui.Form1.txt_CLEAR_3.MaxLength(16)
+gui.Form1.txt_CLEAR_4.MaxLength(16)
+gui.Form1.txt_CLEAR_5.MaxLength(16)
+gui.Form1.txt_CHAMF_1.MaxLength(16)
+gui.Form1.txt_CHAMF_2.MaxLength(16)
+gui.Form1.txt_CHAMF_3.MaxLength(16)
+gui.Form1.txt_CHAMF_4.MaxLength(16)
+gui.Form1.txt_CHAMF_5.MaxLength(16)
+
+
+gui.Form2..create
+gui.Form2..caption("Quality Control Measurements")
+gui.Form2..size(12225,9660)
+gui.Form2..minx(0)
+gui.Form2..miny(0)
+gui.Form2..position(0,0)
+gui.Form2..event(unload,Form2_unload)
+gui.Form2..alwaysontop(False)
+gui.Form2..fontname("Arial")
+gui.Form2..fontsize(8)
+gui.Form2..forecolor(0)
+gui.Form2..fontstyle(,,,,)
+gui.Form2..BackColor(-2147483633)
+gui.Form2..controlbox(True)
+gui.Form2..maxbutton(True)
+gui.Form2..minbutton(True)
+gui.Form2..mousepointer(0)
+gui.Form2..moveable(True)
+gui.Form2..sizeable(False)
+gui.Form2..ShowInTaskBar(True)
+gui.Form2..titlebar(True)
+gui.Form2.gsfgLimits.create(gsflexgrid)
+gui.Form2.gsfgLimits.FixedRows(0)
+gui.Form2.gsfgLimits.FixedCols(0)
+gui.Form2.gsfgLimits.visible(True)
+gui.Form2.gsfgLimits.size(4815,3705)
+gui.Form2.gsfgLimits.zorder(0)
+gui.Form2.gsfgLimits.position(100,400)
+gui.Form2.gsfgLimits.enabled(True)
+gui.Form2.lbl1.create(label,"Quality Limits",True,1935,255,1,100,200,True,0,Arial,8,-2147483633,0)
+gui.Form2.lbl1.defaultvalue("")
+gui.Form2.lbl1.controlgroup(0)
+gui.Form2.gsfgHist.create(gsflexgrid)
+gui.Form2.gsfgHist.FixedRows(0)
+gui.Form2.gsfgHist.FixedCols(0)
+gui.Form2.gsfgHist.visible(True)
+gui.Form2.gsfgHist.size(11745,4050)
+gui.Form2.gsfgHist.zorder(0)
+gui.Form2.gsfgHist.position(60,4500)
+gui.Form2.gsfgHist.enabled(True)
+gui.Form2.cmdSave.create(button)
+gui.Form2.cmdSave.caption("Save")
+gui.Form2.cmdSave.visible(True)
+gui.Form2.cmdSave.size(855,375)
+gui.Form2.cmdSave.zorder(0)
+gui.Form2.cmdSave.position(100,8580)
+gui.Form2.cmdSave.enabled(True)
+gui.Form2.cmdSave.fontname("Arial")
+gui.Form2.cmdSave.fontsize(8)
+gui.Form2.cmdSave.defaultvalue("")
+gui.Form2.cmdSave.controlgroup(0)
+gui.Form2.fgMS.create(gsflexgrid)
+gui.Form2.fgMS.FixedRows(0)
+gui.Form2.fgMS.FixedCols(0)
+gui.Form2.fgMS.visible(True)
+gui.Form2.fgMS.size(6780,3705)
+gui.Form2.fgMS.zorder(0)
+gui.Form2.fgMS.position(5020,400)
+gui.Form2.fgMS.enabled(True)
+gui.Form2.lbl2.create(label,"New Measurements",True,1935,255,1,5060,185,True,0,Arial,8,-2147483633,0)
+gui.Form2.lbl2.defaultvalue("")
+gui.Form2.lbl2.controlgroup(0)
+gui.Form2.lbl3.create(label,"Previous Entry",True,1935,255,1,100,4300,True,0,Arial,8,-2147483633,0)
+gui.Form2.lbl3.defaultvalue("")
+gui.Form2.lbl3.controlgroup(0)
+
+
+gui.Form3..create
+gui.Form3..caption("Select a Work Order")
+gui.Form3..size(3705,2100)
+gui.Form3..minx(0)
+gui.Form3..miny(0)
+gui.Form3..position(0,0)
+gui.Form3..event(unload,form3_unload)
+gui.Form3..alwaysontop(False)
+gui.Form3..fontname("Arial")
+gui.Form3..fontsize(8)
+gui.Form3..forecolor(0)
+gui.Form3..fontstyle(,,,,)
+gui.Form3..BackColor(-2147483633)
+gui.Form3..controlbox(True)
+gui.Form3..maxbutton(True)
+gui.Form3..minbutton(True)
+gui.Form3..mousepointer(0)
+gui.Form3..moveable(True)
+gui.Form3..sizeable(False)
+gui.Form3..ShowInTaskBar(True)
+gui.Form3..titlebar(True)
+gui.Form3.txtJob.create(textbox,"",True,1215,300,0,170,515,True,0,Arial,8,-2147483643,1)
+gui.Form3.txtJob.event(gotfocus,txt_gotfocus)
+gui.Form3.txtJob.maxLength(6)
+gui.Form3.txtJob.defaultvalue("")
+gui.Form3.txtJob.controlgroup(0)
+gui.Form3.txtSuffix.create(textbox,"",True,705,300,0,1550,515,True,0,Arial,8,-2147483643,1)
+gui.Form3.txtSuffix.event(gotfocus,txt_gotfocus)
+gui.Form3.txtSuffix.maxLength(3)
+gui.Form3.txtSuffix.defaultvalue("")
+gui.Form3.txtSuffix.controlgroup(0)
+gui.Form3.lbl1.create(label,"Work Order Number",True,1935,255,1,200,290,True,0,Arial,8,-2147483633,0)
+gui.Form3.lbl1.defaultvalue("")
+gui.Form3.lbl1.controlgroup(0)
+gui.Form3.cmdOk.create(button)
+gui.Form3.cmdOk.caption("Ok")
+gui.Form3.cmdOk.visible(True)
+gui.Form3.cmdOk.size(855,375)
+gui.Form3.cmdOk.zorder(0)
+gui.Form3.cmdOk.position(215,915)
+gui.Form3.cmdOk.enabled(True)
+gui.Form3.cmdOk.fontname("Arial")
+gui.Form3.cmdOk.fontsize(8)
+gui.Form3.cmdOk.event(click,cmdok_click)
+gui.Form3.cmdOk.defaultvalue("")
+gui.Form3.cmdOk.controlgroup(0)
+gui.Form3.cmdWOBrowser.create(button)
+gui.Form3.cmdWOBrowser.caption("^")
+gui.Form3.cmdWOBrowser.visible(True)
+gui.Form3.cmdWOBrowser.size(435,375)
+gui.Form3.cmdWOBrowser.zorder(0)
+gui.Form3.cmdWOBrowser.position(2470,475)
+gui.Form3.cmdWOBrowser.enabled(True)
+gui.Form3.cmdWOBrowser.fontname("Arial")
+gui.Form3.cmdWOBrowser.fontsize(8)
+gui.Form3.cmdWOBrowser.event(click,cmdwobrowser_click)
+gui.Form3.cmdWOBrowser.event(gotfocus,txt_gotfocus)
+gui.Form3.cmdWOBrowser.defaultvalue("")
+gui.Form3.cmdWOBrowser.controlgroup(0)
+gui.Form3.txtJob.tabstop(True)
+gui.Form3.txtJob.tabindex(1)
+gui.Form3.txtSuffix.tabstop(True)
+gui.Form3.txtSuffix.tabindex(2)
+gui.Form3.cmdWOBrowser.tabstop(True)
+gui.Form3.cmdWOBrowser.tabindex(3)
+gui.Form3.cmdOk.tabstop(True)
+gui.Form3.cmdOk.tabindex(4)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Variable.Global.sJob.Declare(String)
+Variable.Global.sSuffix.Declare(String)
+Variable.Global.sWC.Declare(String)
+
+Variable.UDT.uQltyAttr.Define("Attribute_Name",String,Attribute_Name)
+Variable.UDT.uQltyAttr.Define("Nominal",Float,Nominal)
+Variable.UDT.uQltyAttr.Define("High_Limit",Float,High_Limit)
+Variable.UDT.uQltyAttr.Define("Low_Limit",Float,Low_Limit)
+Variable.UDT.uQltyAttr.Define("Qlty_Plan_ID",Long,Qlty_Plan_REC_ID)
+Variable.uGlobal.uQltyAttr.Declare("uQltyAttr")
+Variable.UDT.uQltyHist.Define("Attribute_Name",String,Attribute_Name)
+Variable.UDT.uQltyHist.Define("Hist_Seq",String,Hist_Seq)
+Variable.UDT.uQltyHist.Define("Val_1",String,Val_1)
+Variable.UDT.uQltyHist.Define("Val_2",String,Val_2)
+Variable.UDT.uQltyHist.Define("Val_3",String,Val_3)
+Variable.UDT.uQltyHist.Define("Val_4",String,Val_4)
+Variable.UDT.uQltyHist.Define("Val_5",String,Val_5)
+Variable.UDT.uQltyHist.Define("REC_ID",Long,REC_ID)
+Variable.uGlobal.uQltyHist.Declare("uQltyHist")
+Variable.Global.iHistSeq.Declare(Long,0)
+Variable.UDT.uHistHead.Define("HIST_SEQ",Long,Hist_Seq)
+Variable.UDT.uHistHead.Define("USER",String,User_Entered)
+Variable.UDT.uHistHead.Define("DATE_ENTERED",Date,Date_Entered)
+Variable.uGlobal.uHistHead.Declare("uHistHead")
+Variable.Global.bGodMode.Declare(Boolean,False)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.ODBC.Connection!conX.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+F.Intrinsic.Control.If(V.Caller.Hook,=,"15880")
+	'if god mode is false they are running it normally and no values of the history can be changed,
+	V.Global.bGodMode.Set(False)
+	V.Global.sJob.Set(V.Passed.009990)
+	V.Global.sSuffix.Set(V.Passed.009991)
+	V.Global.sWC.Set(V.Passed.009996)
+'	F.Intrinsic.Control.CallSub(Buildstyle_fgms)
+	F.Intrinsic.Control.CallSub(Buildstyle_gsfghist)
+	F.Intrinsic.Control.CallSub(Buildstyle_gsfglimits)
+	F.Intrinsic.Control.CallSub(Load_job)
+	F.Intrinsic.Control.CallSub(Load_hist)
+	Gui.Form1..Show
+F.Intrinsic.Control.ElseIf(V.Caller.Hook,>=,"1000000")
+	'god modde is used throughout the thing. They can run this and are able to edit any history values.
+	V.Global.bGodMode.Set(True)
+'	F.Intrinsic.Control.CallSub(Buildstyle_fgms)
+'	F.Intrinsic.Control.CallSub(Buildstyle_gsfghist)
+	'load god mode buildstyle
+	F.Intrinsic.Control.CallSub(Buildstyle_hist_godmode)
+	F.Intrinsic.Control.CallSub(Buildstyle_gsfglimits)
+	F.Intrinsic.Control.CallSub(Load_job)
+	F.Intrinsic.Control.CallSub(Load_hist)
+	'show our work order selection screen
+	Gui.Form3..Show
+	F.Intrinsic.Control.BlockEvents
+	Gui.Form3.txtJob.SetFocus
+	Gui.Form1.cmdSave.Enabled(False)
+	F.Intrinsic.Control.UnBlockEvents
+F.Intrinsic.Control.Else
+	F.Intrinsic.Control.CallSub(Unload)
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+Program.Sub.Buildstyle_gsfgLimits.Start
+F.Intrinsic.Control.SetErrorHandler("Buildstyle_gsfgLimits_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sTitle.Declare(String)
+V.Local.sRows.Declare(String)
+V.Local.iT.Declare(Long)
+V.Local.iR.Declare(Long)
+
+F.Intrinsic.String.Split("*!*THK*!*IC*!*WD*!*LG*!*HOLE*!*C'SINK*!*C'BORE*!*BALLDIM*!*Clear*!*Rad*!*CHAMF*!*Fin Press Flat","*!*",V.Local.sRows)
+
+F.Intrinsic.String.Split("Item*!*Nominal*!*High Limit*!*Low Limit","*!*",V.Local.sTitle)
+
+Gui.Form1.gsfgLimits.Rows(1)
+
+F.Intrinsic.Math.Add(V.Local.sTitle.UBound,1,V.Local.iT)
+Gui.Form1.gsfgLimits.Cols(V.Local.iT)
+Gui.Form1.gsfgLimits.SetColumnPercentages(".33:.22:.22:.22")
+F.Intrinsic.Control.For(V.Local.iT,0,V.Local.sTitle.UBound,1)
+	Gui.Form1.gsfgLimits.BuildStyle(1,V.Local.iT,"Fontstyle","Bold",True)
+	Gui.Form1.gsfgLimits.BuildStyle(1,V.Local.iT,"Format","Alignment",4)
+	Gui.Form1.gsfgLimits.BuildStyle(1,V.Local.iT,"Type","Locked",True)
+	Gui.Form1.gsfgLimits.BuildStyle(2,V.Local.iT,"Format","Alignment",2)
+	Gui.Form1.gsfgLimits.BuildStyle(2,V.Local.iT,"Type","Locked",True)
+	Gui.Form1.gsfgLimits.BuildStyle(2,V.Local.iT,"Format","Mask","#####.00##")
+	Gui.Form1.gsfgLimits.TextMatrix(V.Local.iT,0,V.Local.sTitle(v.Local.iT))
+F.Intrinsic.Control.Next(V.Local.iT)
+
+Gui.Form1.gsfgLimits.BuildStyle(2,0,"Fontstyle","Bold",True)
+'Gui.Form1.gsfgLimits.BuildStyle(2,0,"Fontstyle","Size",8)
+
+
+Gui.Form1.gsfgLimits.ApplyStyle(0,1)
+
+
+F.Intrinsic.Math.Add(V.Local.sRows.UBound,1,V.Local.iR)
+Gui.Form1.gsfgLimits.Rows(V.Local.iR)
+Gui.Form1.gsfgLimits.FixedRows(1)
+F.Intrinsic.Control.For(V.Local.iT,1,V.Local.sRows.UBound,1)
+	Gui.Form1.gsfgLimits.TextMatrix(0,V.Local.iT,V.Local.sRows(v.Local.iT))
+'	Gui.Form1.gsfgLimits.RowHeight(V.Local.iT,300)4
+	Gui.Form1.gsfgLimits.ApplyStyle(V.Local.iT,2)
+F.Intrinsic.Control.Next(V.Local.iT)
+
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Buildstyle_gsfgLimits_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Buildstyle_gsfgLimits.End
+
+Program.Sub.Buildstyle_gsfgHist.Start
+F.Intrinsic.Control.SetErrorHandler("Buildstyle_gsfgHist_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sRows.Declare(String)
+V.Local.sTItles.Declare(String)
+V.Local.iR.Declare(Long)
+V.Local.iC.Declare(Long)
+
+F.Intrinsic.String.Split("*!*THK*!*IC*!*WD*!*LG*!*HOLE*!*C'SINK*!*C'BORE*!*BALLDIM*!*Clear*!*Rad*!*CHAMF*!*Fin Press Flat","*!*",V.Local.sRows)
+F.Intrinsic.String.Split("Item*!*1*!* 2*!* 3 *!*4*!*5","*!*",V.Local.sTItles)
+
+
+Gui.Form1.gsfgHist.Rows(1)
+
+'columns
+F.Intrinsic.Math.Add(V.Local.sTItles.UBound,1,V.Local.iC)
+Gui.Form1.gsfgHist.Cols(V.Local.iC)
+Gui.Form1.gsfgHist.setcolumnpercentages(".19:.16:.16:.16:.16:.16")
+
+
+F.Intrinsic.Control.For(V.Local.iC,0,V.Local.sTItles.UBound,1)
+	Gui.Form1.gsfgHist.BuildStyle(1,V.Local.iC,"Format","Alignment",4)
+	Gui.Form1.gsfgHist.Buildstyle(1,V.Local.iC,"Fontstyle","Bold",True)
+	Gui.Form1.gsfgHist.BuildStyle(1,V.Local.iC,"Type","Locked",True)
+	Gui.Form1.gsfgHist.BuildStyle(2,V.Local.iC,"Format","Alignment",2)
+	Gui.Form1.gsfgHist.BuildStyle(2,V.Local.ic,"Type","Locked",True)
+	Gui.Form1.gsfgHist.TextMatrix(V.Local.iC,0,V.Local.sTItles(v.Local.iC))
+F.Intrinsic.Control.Next(V.Local.iC)
+Gui.Form1.gsfgHist.BuildStyle(2,0,"Type","Locked",True)
+Gui.Form1.gsfgHist.Buildstyle(2,0,"Fontstyle","Bold",True)
+Gui.Form1.gsfgHist.BuildStyle(2,0,"Format","Alignment",2)
+Gui.Form1.gsfgHist.ApplyStyle(0,1)
+
+Gui.Form1.gsfgHist.SetProperty("Enter",2)
+'rows
+F.Intrinsic.Math.Add(V.Local.sRows.UBound,1,V.Local.iR)
+Gui.Form1.gsfgHist.Rows(V.Local.iR)
+Gui.Form1.gsfgHist.FixedRows(1)
+
+
+F.Intrinsic.Control.For(V.Local.iR,1,V.Local.sRows.UBound,1)
+	Gui.Form1.gsfgHist.TextMatrix(0,V.Local.iR,V.Local.sRows(v.Local.iR))
+	Gui.Form1.gsfgHist.ApplyStyle(V.Local.iR,2)
+F.Intrinsic.Control.Next(V.Local.iR)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Buildstyle_gsfgHist_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Buildstyle_gsfgHist.End
+
+program.sub.form1_unload.start
+F.Intrinsic.Control.SetErrorHandler("form1_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+'we are on the custom version so we have to do things differenctly	
+Gui.Form1..Visible(False)
+Gui.Form3..Enabled(True)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("form1_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.form1_unload.end
+
+Program.Sub.Buildstyle_fgMS.Start
+F.Intrinsic.Control.SetErrorHandler("Buildstyle_fgMeasures_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRows.Declare(String)
+V.Local.sTItles.Declare(String)
+V.Local.iR.Declare(Long)
+V.Local.iC.Declare(Long)
+
+
+Gui.Form1.fgMS.Rows(1)
+
+F.Intrinsic.String.Split("*!*THK*!*IC*!*WD*!*LG*!*HOLE*!*C'SINK*!*C'BORE*!*BALLDIM*!*Clear*!*Rad*!*CHAMF*!*Finished Press Flat","*!*",V.Local.sRows)
+
+F.Intrinsic.String.Split("Item*!*1 *!* 2*!* 3 *!*4*!*5","*!*",V.Local.sTItles)
+
+'columns
+F.Intrinsic.Math.Add(V.Local.sTItles.UBound,1,V.Local.iC)
+Gui.Form1.fgMS.Cols(V.Local.iC)
+Gui.Form1.fgMS.setcolumnpercentages(".19:.16:.16:.16:.16:.16")
+
+
+F.Intrinsic.Control.For(V.Local.iC,0,V.Local.sTItles.UBound,1)
+	Gui.Form1.fgMS.BuildStyle(1,V.Local.iC,"Format","Alignment",4)
+	Gui.Form1.fgMS.Buildstyle(1,V.Local.iC,"Fontstyle","Bold",True)
+	Gui.Form1.fgMS.BuildStyle(1,V.Local.iC,"Type","Locked",True)
+	Gui.Form1.fgMS.BuildStyle(2,V.Local.iC,"Format","Alignment",2)
+	Gui.Form1.fgMS.TextMatrix(V.Local.iC,0,V.Local.sTItles(v.Local.iC))
+F.Intrinsic.Control.Next(V.Local.iC)
+
+Gui.Form1.fgMS.BuildStyle(2,0,"Type","Locked",True)
+Gui.Form1.fgMS.Buildstyle(2,0,"Fontstyle","Bold",True)
+Gui.Form1.fgMS.BuildStyle(2,0,"Format","Alignment",2)
+Gui.Form1.fgMS.ApplyStyle(0,1)
+
+Gui.Form1.fgMS.SetProperty("Enter",2)
+'rows
+F.Intrinsic.Math.Add(V.Local.sRows.UBound,1,V.Local.iR)
+Gui.Form1.fgMS.Rows(V.Local.iR)
+Gui.Form1.fgMS.FixedRows(1)
+
+
+F.Intrinsic.Control.For(V.Local.iR,1,V.Local.sRows.UBound,1)
+	Gui.Form1.fgMS.TextMatrix(0,V.Local.iR,V.Local.sRows(v.Local.iR))
+	Gui.Form1.fgMS.ApplyStyle(V.Local.iR,2)
+F.Intrinsic.Control.Next(V.Local.iR)
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Buildstyle_fgMeasures_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Buildstyle_fgMS.End
+
+Program.Sub.Load_Job.Start
+F.Intrinsic.Control.SetErrorHandler("Load_Job_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sT.Declare(String)
+V.Local.iRet.Declare(String)
+V.Local.sPart.Declare(String)
+V.Local.sRows.Declare(String)
+V.Local.iRows.Declare(Long)
+V.Local.sRet.Declare(String)
+
+V.Local.iC.Declare(Long)
+
+'get fg part from table
+F.Intrinsic.String.Build("Select Part From V_JOB_HEADER WHERE Job = '{0}' And Suffix = '{1}'",V.Global.sJob.Trim,V.Global.sSuffix.Trim,V.Local.sSQL)
+F.ODBC.Connection!conX.OpenLocalRecordsetRO("Rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conX!Rst.EOF,<>,True)
+	V.local.sPart.set(V.ODBC.conX!Rst.FieldValTrim!Part)
+F.Intrinsic.Control.EndIf
+F.ODBC.conX!Rst.Close
+
+F.Intrinsic.Control.if(V.Local.sPart.Trim,<>,"")
+	'grab our Rec_ID from the Record and get to our QLty+Plan_ID.
+	F.Intrinsic.String.Build("Select Rec_ID From GCG_INV_Style_Main Where Part = '{0}'",V.local.sPart,V.Local.sSQL)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+		F.Intrinsic.String.Build("Select Qlty_Plan_ID From GCG_Styles_Qlty_Main Where Rec_ID = '{0}'",V.ODBC.conX!Rst.FieldValLong!Rec_ID,V.Local.sSQL)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst1",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.conX!Rst1.EOF,<>,True)
+			'grab our Qlty_Plan_ID and get some other information from our Qlty_Plan_Attr table. key being Qlty_PLan_ID
+			F.Intrinsic.String.Build("Select Qlty_Plan_REC_ID, Attribute_Name,Nominal,High_Limit,Low_Limit From GCG_Styles_Qlty_Attr Where Qlty_Plan_REC_ID = '{0}'",V.ODBC.conX!rst1.FieldValLong!Qlty_Plan_ID,V.Local.sSQL)
+			'have to have specific order by.....
+			F.Intrinsic.String.Build("{0} {1}",V.Local.sSQL," Order by Case When Attribute_Name = 'THK' Then 0 Else 1 End,Case When Attribute_Name = 'IC' Then 1 Else 2 End, Case When Attribute_Name = 'WD'Then 2 Else 3 End,Case When Attribute_Name = 'LG' Then 3 Else 4 End,Case When Attribute_Name='HOLE' Then 4 Else 5 End, Case When Attribute_Name='C''SINK' Then 5 Else 6 End,Case When Attribute_Name='C''BORE' Then 6 Else 7 End, Case When Attribute_Name='BALLDIM' Then 8 Else 9 End,Case When Attribute_Name='Clear' Then 9 Else 10 End,Case When Attribute_Name='Rad' Then 10 Else 11 End,Case When Attribute_Name='CHAMF' Then 11 Else 12 End,Case When Attribute_Name='Finished Press Flat' Then 12 Else 13 End",V.Local.sSQL)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst2",V.Local.sSQL)
+			F.Intrinsic.Control.If(V.ODBC.conX!rst2.EOF,<>,True)
+				'load our udt from recordset.
+				F.Intrinsic.Variable.LoadUDTFromRecordset("ConX","rst2","v.uglobal.uQltyAttr",False)
+				'due to the way we want to display the data we need to load it a bit differently, we want the attribute information to be done in a specific way.
+				'load our flexgrid right after it.	
+				Gui.Form1.gsfgLimits.LoadFromUDT("v.uglobal.uQltyAttr","Attribute_Name*!*Nominal*!*High_Limit*!*Low_Limit",2)
+			F.Intrinsic.Control.EndIf
+			F.ODBC.conX!rst2.Close
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conX!rst1.Close
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conX!Rst.Close
+F.Intrinsic.Control.EndIf
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Load_Job_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Load_Job.End
+
+Program.Sub.Load_Hist.Start
+F.Intrinsic.Control.SetErrorHandler("Load_Hist_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+
+'get our latest hist id
+F.Intrinsic.String.Build("Select Top 1 Hist_Seq From GCG_WO_Qlty_Hist Where Job ='{0}' And Suffix = '{1}' Order By Hist_Seq DESC",V.Global.sJob.Trim,V.Global.sSuffix.Trim,V.Local.sSQL)
+F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conX!Rst.EOF,<>,True)
+	'grab our last hist id
+	V.Global.iHistSeq.Set(V.ODBC.conX!Rst.FieldValLong!Hist_Seq)
+	F.ODBC.conX!Rst.Close
+	F.Intrinsic.Control.If(V.Global.bGodMode,=,False)
+		F.Intrinsic.String.Build("Select Rec_ID, Attribute_Name,Hist_Seq,Val_1,Val_2,Val_3,Val_4,Val_5 From GCG_WO_Qlty_Hist Where Job ='{0}' And Suffix = '{1}' And Hist_Seq = '{2}' Order By Rec_ID",V.Global.sJob.Trim,V.global.ssuffix.trim,V.Global.iHistSeq,V.Local.sSQL)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Build("Select Rec_ID, Attribute_Name,Hist_Seq,Val_1,Val_2,Val_3,Val_4,Val_5 From GCG_WO_Qlty_Hist Where Job ='{0}' And Suffix = '{1}' Order By Rec_ID",V.Global.sJob.Trim,V.global.ssuffix.trim,V.Local.sSQL)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.Connection!conX.OpenLocalRecordsetRO("Rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.conX!Rst.EOF,<>,True)
+		F.Intrinsic.Variable.LoadUDTFromRecordset("conX","rst","v.uglobal.uQltyHist",False)
+		'look for the greatest history number. cause we are loading that one to our grid.
+'		F.Intrinsic.Variable.UDTMultiQuickSort(V.uGlobal.uQltyHist!Hist_Seq,True)
+		'change FINISHED_PRESS_FLAT TO NOT HAVE UNDERSCORes	
+		F.Intrinsic.Control.If(V.Global.bGodMode,=,False)
+			F.Intrinsic.Variable.UDTMultiSeekSet(V.uGlobal.uQltyHist!Attribute_Name,"FINISHED_PRESS_FLAT",V.uGlobal.uQltyHist!Attribute_Name,"FINISHED PRESS FLAT")
+			'load our flexgrid from out first element only since this is the most recent history that we want to see.
+			Gui.Form1.gsfgHist.LoadFromUDT("v.uglobal.uQltyHIst","Attribute_Name*!*Val_1*!*Val_2*!*Val_3*!*Val_4*!*Val_5",2)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+F.ODBC.conX!Rst.Close
+
+'if we are in god mode load our distinct information into our uHistHead udt.
+F.Intrinsic.Control.If(V.Global.bGodMode,=,True)
+	F.Intrinsic.String.Build("Select Distinct Hist_Seq, User_entered,Date_Entered From GCG_WO_Qlty_Hist Where Job = '{0}' And Suffix = '{1}'",V.Global.sJob.Trim,V.Global.sSuffix.Trim,V.Local.sSQL)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.conX!Rst.EOF,<>,True)
+		F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst","v.uglobal.uHistHead",False)
+		Gui.Form1.gsfgHist.LoadFromUDT("v.uglobal.uHistHead","HIST_SEQ::0*!*USER::1*!*DATE_ENTERED::2",2)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conX!Rst.Close
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Load_Hist_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Load_Hist.End
+
+program.sub.cmdsave_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdsave_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sBox.Declare(String)
+V.Local.iB.Declare(Long)
+V.Local.iItem.Declare(Long)
+V.Local.fNum.Declare(Float)
+V.Local.sSQL.Declare(String)
+V.Local.iRec.Declare(Long)
+
+F.Intrinsic.Control.BlockEvents
+'F.Intrinsic.String.Split("THK*!*CBORE*!*IC*!*BALLDIM*!*WD*!*CLEAR*!*LG*!*RAD*!*HOLE*!*CHAMF*!*CSINK*!*FIN","*!*",V.Local.sBox)
+F.Intrinsic.String.Split("THK*!*IC*!*WD*!*LG*!*HOLE*!*CSINK*!*CBORE*!*BALLDIM*!*CLEAR*!*RAD*!*CHAMF*!*FINISHED_PRESS_FLAT","*!*",V.Local.sBox)
+
+'incement our history global iHistSeq variable, as this should be the last history sequence that we had. We can have as many as we want .
+'if we are not in god mode cause this is a new entry and we need to add a new record.
+F.Intrinsic.Control.If(V.Global.bGodMode,=,False)
+	F.Intrinsic.Control.If(V.Global.iHistSeq,=,0)
+		V.Global.iHistSeq.Set(1)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.math.Add(V.Global.iHistSeq,1,V.Global.iHistSeq)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+'if god mode is true we are going to remove all records then carry on as if they are new but not really.
+F.Intrinsic.Control.If(V.Global.bGodMode,=,True)
+	F.Intrinsic.UI.InvokeWaitDialog("Saving...")
+	Gui.Form1..Visible(False)
+	F.Intrinsic.String.Build("Delete From GCG_WO_Qlty_Hist Where Job = '{0}' And Suffix = '{1}' And Hist_seq = '{2}'",V.Global.sJob,V.Global.sSuffix,V.Global.iHistSeq,V.Local.sSQL)
+	F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+	Gui.Form1.gsfgHist.Enabled(True)
+	Gui.Form1.cmdSave.Enabled(False)
+F.Intrinsic.Control.EndIf
+
+'now we should be good to go.
+F.Intrinsic.String.Build("Select * From GCG_WO_Qlty_Hist Where Job = '{0}' And Suffix = '{1}' And Hist_seq = '{2}'",V.Global.sJob,V.Global.sSuffix,V.Global.iHistSeq,V.Local.sSQL)
+F.ODBC.Connection!conX.OpenLocalRecordsetRW("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conX!Rst.EOF,=,False)
+	'trythisandseeifitworks.Weshouldcallthissubagainandintheoryitshouldtrytoincrementthenexton
+	F.Intrinsic.Control.CallSub(Cmdsave_click)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.For(V.Local.iB,0,V.Local.sBox.UBound,1)
+	'get id for our field, new id for each record
+	f.ODBC.Connection!conX.GetID("GCG_WO_Qlty_Hist","Rec_ID",True,v.Local.iRec)
+	F.ODBC.conX!Rst.AddNew
+	F.ODBC.conX!Rst.Set!Rec_ID(V.Local.iRec)
+	F.ODBC.conX!Rst.Set!Job(V.Global.sJob.triM)
+	F.ODBC.conX!Rst.Set!Suffix(V.Global.sSuffix.Trim)
+	F.ODBC.conX!Rst.Set!Hist_Seq(V.Global.iHistSeq)
+	F.ODBC.conX!Rst.Set!Attribute_Name(V.Local.sBox(v.Local.iB))
+	F.Intrinsic.Control.If(V.Global.bGodMode,=,False)
+		'employee on the job
+		F.ODBC.conX!Rst.Set!user_entered(V.passed.009993)
+	F.Intrinsic.Control.Else
+		F.ODBC.conX!Rst.Set!user_entered(V.caller.user)
+	F.Intrinsic.Control.EndIf
+	f.ODBC.conX!Rst.Set!Date_Entered(v.Ambient.Date.PervasiveDate)
+	F.Intrinsic.Control.For(V.Local.iItem,1,5,1)
+		F.Intrinsic.Debug.SetLA("Attribute: ",V.Local.sBox(v.Local.iB))
+		F.Intrinsic.Debug.SetLA(" Val: ",V.Local.iItem)
+		'check each one, we are starting with this, any that are blank or non numeric they will be defaulted to numeric.
+		'I wonder it it is faster to write to udt then to recordset? or just stright to recordset?
+		f.Intrinsic.Variable.SetNumeric(v.Screen.Form1!txt_[v.local.sBox(v.local.iB)]_[v.local.iItem].Text,0,v.Local.fNum)
+		F.Intrinsic.Debug.SetLA("saving this Number. ",V.local.fNum)
+'		F.Intrinsic.Control.If(V.Local.fNum,<>,0)
+''			F.Intrinsic.String.Format(V.Local.fNum,"##########.######",V.Local.fNum)
+'		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Debug.SetLA("Formatted Number: ",V.Local.fNum)
+		F.ODBC.conX!Rst.Set!Val_[v.local.iItem](V.Local.fNum)
+	F.Intrinsic.Control.Next(V.Local.iItem)
+	F.ODBC.conX!Rst.Update
+F.Intrinsic.Control.Next(V.Local.iB)
+F.ODBC.conX!Rst.Close
+
+'if hook is on gui, end our form.
+F.Intrinsic.Control.If(V.Caller.Hook,=,"15880")
+	F.Intrinsic.Control.CallSub(Unload)
+F.Intrinsic.Control.Else
+ 	'we need to clear our textboxes and let the user continue on the main scree500004n.
+	F.Intrinsic.Control.CallSub(Clear_txt)
+	'reload our history
+	F.Intrinsic.Control.CallSub(Load_hist)
+	F.Intrinsic.UI.CloseWaitDialog
+	Gui.Form1.cmdClear.Enabled(False)
+	Gui.Form1.cmdClear.Visible(False)
+	Gui.Form1.lblCaption.Caption("")
+	Gui.Form1..Visible(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.UnBlockEvents
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdsave_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdsave_click.end
+
+program.sub.cmdok_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdok_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+V.Global.sJob.Set(V.Screen.Form3!txtJob.Text)
+V.Global.sSuffix.Set(V.Screen.Form3!txtSuffix.Text)
+
+F.Intrinsic.Control.If(V.Global.sJob.Trim,=,"")
+	F.Intrinsic.UI.Msgbox("Work Order number must be entered.")
+	Gui.Form3.txtJob.SetFocus
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.CallSub(Load_job)
+F.Intrinsic.Control.CallSub(Load_hist)
+
+Gui.Form3..Enabled(False)
+Gui.Form1..Show
+F.Intrinsic.String.Build("Work Order: {0}  {1} ",V.Global.sJob.Trim,V.Global.sSuffix,V.Local.sError)
+Gui.Form1..Caption(V.Local.sError)
+
+	
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdok_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdok_click.end
+
+program.sub.txt_gotfocus.start
+F.Intrinsic.Control.SetErrorHandler("txt_gotfocus_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.BlockEvents
+'select all text in our textbox when get focus is upon us.
+gui.[v.args.screen].[v.args.controlname].SelectAll
+F.Intrinsic.Control.UnBlockEvents
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("txt_gotfocus_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.txt_gotfocus.end
+
+program.sub.form3_unload.start
+F.Intrinsic.Control.SetErrorHandler("form3_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.CallSub(Unload)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("form3_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.form3_unload.end
+
+Program.Sub.Unload.Start
+F.Intrinsic.Control.SetErrorHandler("Unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.ODBC.Connection!conX.Close
+
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Unload.End
+
+Program.Sub.Clear_txt.Start
+F.Intrinsic.Control.SetErrorHandler("Clear_txt_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.local.sBox.Declare(String)
+V.Local.iItem.Declare(Long)
+V.Local.iB.Declare(Long)
+V.Local.sTxtName.Declare(String)
+
+'all this subroutine does is clear out the textboxes on the screen.
+'thats all.its only called from our one sub which is the cmdsave_click when global.bGodMode = 'True"
+
+
+F.Intrinsic.Control.BlockEvents
+
+F.Intrinsic.String.Split("THK*!*CBORE*!*IC*!*BALLDIM*!*WD*!*CLEAR*!*LG*!*RAD*!*HOLE*!*CHAMF*!*CSINK*!*FINISHED_PRESS_FLAT","*!*",V.Local.sBox)
+
+F.Intrinsic.Control.For(V.Local.iB,0,V.Local.sBox.UBound,1)
+	V.Local.sTxtName.Set(V.Local.sBox(v.Local.iB).Trim)
+	'clearourcheckboxes
+	Gui.Form1.txt_[v.local.sTxtName]_1.Text("")
+	Gui.Form1.txt_[v.local.sTxtName]_2.Text("")
+	Gui.Form1.txt_[v.local.sTxtName]_3.Text("")
+	Gui.Form1.txt_[v.local.sTxtName]_4.Text("")
+	Gui.Form1.txt_[v.local.sTxtName]_5.Text("")
+F.Intrinsic.Control.Next(V.Local.iB)
+F.Intrinsic.Control.UnBlockEvents
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Clear_txt_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Clear_txt.End
+
+Program.Sub.Buildstyle_HIst_GodMode.Start
+F.Intrinsic.Control.SetErrorHandler("Buildstyle_HIst_GodMode_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.i.Declare(Long)
+
+'so we are going to call this for our god mode. We are going to show the user the
+Gui.Form1.gsfgHist.Cols(4)
+Gui.Form1.gsfgHist.Rows(1)
+Gui.Form1.gsfgHist.Rows(2)
+Gui.Form1.gsfgHist.FixedRows(1)
+
+Gui.Form1.gsfgHist.TextMatrix(0,0,"History Seq")
+Gui.Form1.gsfgHist.TextMatrix(1,0,"User Last Entered")
+Gui.Form1.gsfgHist.TextMatrix(2,0,"Date Entered")
+Gui.Form1.gsfgHist.SetColumnPercentages(".25:.25:.25:.20")
+
+
+F.Intrinsic.Control.For(V.Local.i,0,3,1)
+	Gui.Form1.gsfgHist.BuildStyle(1,V.Local.i,"Type","Locked",True)
+	Gui.Form1.gsfgHist.BuildStyle(1,V.Local.i,"Format","Alignment",4)
+	Gui.Form1.gsfgHist.BuildStyle(1,V.Local.i,"Fontstyle","Bold",True)
+	F.Intrinsic.Control.If(V.Local.i,<,3)
+		Gui.Form1.gsfgHist.BuildStyle(2,V.Local.i,"Type","Locked",True)
+		Gui.Form1.gsfgHist.BuildStyle(2,V.Local.i,"format","Alignment",2)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.i)
+
+Gui.Form1.gsfgHist.BuildStyle(2,3,"Type","Command","View")
+
+
+Gui.Form1.gsfgHist.ApplyStyle(0,1)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Buildstyle_HIst_GodMode_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.Buildstyle_HIst_GodMode.End
+
+program.sub.gsfghist_commandclick.start
+F.Intrinsic.Control.SetErrorHandler("gsfghist_commandclick_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRow.Declare(String)
+
+'we are only going to load this one if god mode is true boo.
+F.Intrinsic.Control.If(V.Global.bGodMode,=,True)
+	Gui.Form1.gsfgHist.ReadRow(V.Args.key,V.Local.sRow)
+	F.Intrinsic.Control.If(V.Local.sRow.Trim,<>,"")
+		F.Intrinsic.String.Split(V.Local.sRow,"*!*",V.Local.sRow)
+		V.Global.iHistSeq.Set(V.Local.sRow(0).Trim)
+		F.Intrinsic.Control.CallSub(Load_txtbxes)
+		F.Intrinsic.String.Build("History Seq {0} Entered Values: ",V.Global.iHistSeq,V.Local.srow)
+		Gui.Form1.lblCaption.Caption(V.Local.sRow)
+		Gui.Form1.cmdClear.Enabled(True)
+		Gui.Form1.cmdClear.Visible(True)
+		Gui.Form1.cmdSave.Enabled(True)
+		Gui.Form1.gsfgHist.Enabled(False)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("gsfghist_commandclick_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.gsfghist_commandclick.end
+
+Program.Sub.Load_txtbxes.Start
+F.Intrinsic.Control.SetErrorHandler("Load_txtbxes_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sHistOrd.Declare(String)
+V.Local.sOrd.Declare(String)
+V.Local.iO.Declare(Long)
+V.Local.sBox.Declare(String)
+V.Local.iB.Declare(Long)
+V.Local.iC.Declare(Long)
+V.Local.sItem.Declare(String)
+
+F.Intrinsic.UI.InvokeWaitDialog("Loading...")
+Gui.Form1..Visible(False)
+F.Intrinsic.String.Split("THK*!*IC*!*WD*!*LG*!*HOLE*!*CSINK*!*CBORE*!*BALLDIM*!*CLEAR*!*RAD*!*CHAMF*!*FINISHED_PRESS_FLAT","*!*",V.Local.sBox)
+'only going to be called from our gsfg command click subroutine as this is only going to work in god mode,
+'we are going to read our information fom out history udt matching off of the hist seq and job and then load the values into the text boxes on the screen so they can see what they are and edit them.
+'enable save button.
+'then we are going to let them enter whatever, our save button should handle god vs. mortal mode, then we can continue
+F.Intrinsic.Control.If(V.Global.bGodMode,=,True)
+'FIND OUR HIST SEQ WITHIN OUR UDT and our attribute name
+	F.Intrinsic.Control.For(V.Local.iB,0,V.Local.sBox.UBound,1)
+		V.Local.sItem.Set(V.Local.sBox(v.Local.iB).Trim)
+		F.Intrinsic.Variable.UDTMultiSeek(V.uGlobal.uQltyHist!Hist_Seq,V.Global.iHistSeq,V.uGlobal.uQltyHist!Attribute_Name,V.Local.sBox(v.Local.iB),V.Local.sOrd)
+		F.Intrinsic.Control.If(V.Local.sOrd.Trim,<>,"")
+			F.Intrinsic.String.Split(V.Local.sOrd,"*!*",V.Local.sOrd)
+			F.Intrinsic.Control.For(V.Local.iO,0,V.Local.sOrd.UBound,1)
+				Gui.Form1.txt_[v.local.sItem]_1.Text(v.uglobal.uqltyHist(v.local.sord(v.local.iO))!Val_1)
+				Gui.Form1.txt_[v.local.sItem]_2.Text(v.uglobal.uqltyHist(v.local.sord(v.local.iO))!Val_2)
+				Gui.Form1.txt_[v.local.sItem]_3.Text(v.uglobal.uqltyHist(v.local.sord(v.local.iO))!Val_3)
+				Gui.Form1.txt_[v.local.sItem]_4.Text(v.uglobal.uqltyHist(v.local.sord(v.local.iO))!Val_4)
+				Gui.Form1.txt_[v.local.sItem]_5.Text(v.uglobal.uqltyHist(v.local.sord(v.local.iO))!Val_5)
+			F.Intrinsic.Control.Next(V.Local.iO)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iB)
+F.Intrinsic.Control.EndIf
+Gui.Form1..Visible(True)
+ F.Intrinsic.UI.CloseWaitDialog
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Load_txtbxes_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Load_txtbxes.End
+
+program.sub.cmdwobrowser_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdwobrowser_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sCol.Declare(String)
+V.Local.iWidth.Declare(Long)
+
+F.Intrinsic.String.Split("Job*!*Suffix*!*Part*!*Due Date","*!*",V.Local.sCol)
+F.Intrinsic.String.Split("1500*!*1000*!*2000*!*1500","*!*",V.Local.iWidth)
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.UI.Browser("Select a Job","conx","Select Distinct QH.Job,QH.Suffix,JH.Part,JH.Date_Due From GCG_WO_Qlty_Hist AS QH Left Join V_JOB_Header AS JH On QH.Job = JH.Job AND QH.Suffix = JH.Suffix Order BY Job,suffix",V.Local.sCol,V.Local.iWidth,6000,7500,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.Form3.txtJob.Text(V.Local.sRet(0).Trim)
+	Gui.Form3.txtSuffix.Text(V.Local.sRet(1).Trim)
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdwobrowser_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmdwobrowser_click.end
+
+program.sub.cmdclear_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdclear_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.CallSub(Clear_txt)
+Gui.Form1.cmdClear.Enabled(False)
+Gui.Form1.cmdClear.Visible(False)
+Gui.Form1.cmdSave.Enabled(False)
+Gui.Form1.gsfgHist.Enabled(True)
+Gui.Form1.lblCaption.Caption("")
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdclear_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_Qlty_Items.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdclear_click.end
+
+
