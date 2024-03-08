@@ -1,0 +1,633 @@
+Program.Sub.ScreenSU.Start
+gui.Form1..create
+gui.Form1..caption("Router Style")
+gui.Form1..size(16230,12465)
+gui.Form1..minx(0)
+gui.Form1..miny(0)
+gui.Form1..position(0,0)
+gui.Form1..event(unload,form1_unload)
+gui.Form1..alwaysontop(False)
+gui.Form1..fontname("Arial")
+gui.Form1..fontsize(8)
+gui.Form1..forecolor(0)
+gui.Form1..fontstyle(,,,,)
+gui.Form1..BackColor(-2147483633)
+gui.Form1..controlbox(True)
+gui.Form1..maxbutton(True)
+gui.Form1..minbutton(True)
+gui.Form1..mousepointer(0)
+gui.Form1..moveable(True)
+gui.Form1..sizeable(True)
+gui.Form1..ShowInTaskBar(True)
+gui.Form1..titlebar(True)
+gui.Form1.tabx1.create(tab)
+gui.Form1.tabx1.tabs(3)
+gui.Form1.tabx1.tabsperrow(3)
+gui.Form1.tabx1.settab(0)
+gui.Form1.tabx1.caption("DCC View")
+gui.Form1.tabx1.settab(1)
+gui.Form1.tabx1.caption("Quality Plan")
+gui.Form1.tabx1.settab(2)
+gui.Form1.tabx1.caption("Job Log")
+gui.Form1.tabx1.size(15570,10830)
+gui.Form1.tabx1.position(200,875)
+gui.Form1.tabx1.visible(True)
+gui.Form1.tabx1.fontname("Arial")
+gui.Form1.tabx1.fontsize(8)
+gui.Form1.tabx1.event(click,tabx1_click)
+gui.Form1.frmTab1.create(frame)
+gui.Form1.frmTab1.caption("Frame")
+gui.Form1.frmTab1.parent("tabx1",0)
+gui.Form1.frmTab1.size(15180,10260)
+gui.Form1.frmTab1.position(150,40)
+gui.Form1.frmTab1.visible(True)
+gui.Form1.frmTab1.borderstyle(0)
+gui.Form1.frmTab1.fontname("Arial")
+gui.Form1.frmTab1.fontsize(8)
+gui.Form1.frm2.create(frame)
+gui.Form1.frm2.caption("Frame")
+gui.Form1.frm2.parent("tabx1",1)
+gui.Form1.frm2.size(15345,10320)
+gui.Form1.frm2.position(50,40)
+gui.Form1.frm2.visible(True)
+gui.Form1.frm2.borderstyle(0)
+gui.Form1.frm2.fontname("Arial")
+gui.Form1.frm2.fontsize(8)
+gui.Form1.txtRouter.create(textbox,"",True,1890,300,0,230,400,False,0,Arial,8,-2147483643,1)
+gui.Form1.txtRouter.defaultvalue("")
+gui.Form1.txtRouter.controlgroup(0)
+gui.Form1.txtRev.create(textbox,"",True,435,300,0,2250,400,False,0,Arial,8,-2147483643,1)
+gui.Form1.txtRev.defaultvalue("")
+gui.Form1.txtRev.controlgroup(0)
+gui.Form1.txtRtrDesc.create(textbox,"",True,3015,300,0,2940,400,False,0,Arial,8,-2147483643,1)
+gui.Form1.txtRtrDesc.defaultvalue("")
+gui.Form1.txtRtrDesc.controlgroup(0)
+gui.Form1.lbl1.create(label,"Router",True,1935,255,1,245,200,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl1.defaultvalue("")
+gui.Form1.lbl1.controlgroup(0)
+gui.Form1.lbl2.create(label,"Rev",True,1935,255,1,2250,215,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl2.defaultvalue("")
+gui.Form1.lbl2.controlgroup(0)
+gui.Form1.lbl3.create(label,"Router Description",True,1935,255,1,2975,175,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl3.defaultvalue("")
+gui.Form1.lbl3.controlgroup(0)
+gui.Form1.htmlDCC_1.create(htmlcontainer)
+gui.Form1.htmlDCC_1.visible(True)
+gui.Form1.htmlDCC_1.size(14925,9450)
+gui.Form1.htmlDCC_1.zorder(0)
+gui.Form1.htmlDCC_1.position(110,95)
+gui.Form1.htmlDCC_1.parent("frmtab1")
+gui.Form1.cmdPrev_1.create(button)
+gui.Form1.cmdPrev_1.caption("Previous")
+gui.Form1.cmdPrev_1.visible(True)
+gui.Form1.cmdPrev_1.size(1290,540)
+gui.Form1.cmdPrev_1.zorder(0)
+gui.Form1.cmdPrev_1.position(5535,9625)
+gui.Form1.cmdPrev_1.enabled(True)
+gui.Form1.cmdPrev_1.parent("frmtab1")
+gui.Form1.cmdPrev_1.fontname("Arial")
+gui.Form1.cmdPrev_1.fontsize(8)
+gui.Form1.cmdPrev_1.event(click,cmdprev_1_click)
+gui.Form1.cmdPrev_1.defaultvalue("")
+gui.Form1.cmdPrev_1.controlgroup(0)
+gui.Form1.cmdNext_1.create(button)
+gui.Form1.cmdNext_1.caption("Next")
+gui.Form1.cmdNext_1.visible(True)
+gui.Form1.cmdNext_1.size(1290,540)
+gui.Form1.cmdNext_1.zorder(0)
+gui.Form1.cmdNext_1.position(7475,9625)
+gui.Form1.cmdNext_1.enabled(True)
+gui.Form1.cmdNext_1.parent("frmtab1")
+gui.Form1.cmdNext_1.fontname("Arial")
+gui.Form1.cmdNext_1.fontsize(8)
+gui.Form1.cmdNext_1.event(click,cmdnext_1_click)
+gui.Form1.cmdNext_1.defaultvalue("")
+gui.Form1.cmdNext_1.controlgroup(0)
+gui.Form1.ddlQualtiyPlan.create(dropdownlist)
+gui.Form1.ddlQualtiyPlan.visible(True)
+gui.Form1.ddlQualtiyPlan.size(3315,330)
+gui.Form1.ddlQualtiyPlan.zorder(0)
+gui.Form1.ddlQualtiyPlan.position(100,335)
+gui.Form1.ddlQualtiyPlan.enabled(True)
+gui.Form1.ddlQualtiyPlan.parent("frm2")
+gui.Form1.ddlQualtiyPlan.fontname("Arial")
+gui.Form1.ddlQualtiyPlan.fontsize(8)
+gui.Form1.ddlQualtiyPlan.defaultvalue("")
+gui.Form1.ddlQualtiyPlan.controlgroup(0)
+gui.Form1.lbl4.create(label,"Quality Plan",True,1935,255,1,125,140,True,0,Arial,8,-2147483633,0)
+gui.Form1.lbl4.parent("frm2")
+gui.Form1.lbl4.defaultvalue("")
+gui.Form1.lbl4.controlgroup(0)
+gui.Form1.gsfgQtyPlan_2.create(gsflexgrid)
+gui.Form1.gsfgQtyPlan_2.FixedRows(0)
+gui.Form1.gsfgQtyPlan_2.FixedCols(0)
+gui.Form1.gsfgQtyPlan_2.visible(True)
+gui.Form1.gsfgQtyPlan_2.size(15045,9300)
+gui.Form1.gsfgQtyPlan_2.zorder(0)
+gui.Form1.gsfgQtyPlan_2.position(100,900)
+gui.Form1.gsfgQtyPlan_2.enabled(True)
+gui.Form1.gsfgQtyPlan_2.parent("frm2")
+gui.Form1.frm3.create(frame)
+gui.Form1.frm3.caption("Frame")
+gui.Form1.frm3.visible(True)
+gui.Form1.frm3.size(15315,10410)
+gui.Form1.frm3.zorder(0)
+gui.Form1.frm3.position(50,-60)
+gui.Form1.frm3.enabled(True)
+gui.Form1.frm3.borderstyle(0)
+gui.Form1.frm3.parent("tabx1",2)
+gui.Form1.frm3.fontname("Arial")
+gui.Form1.frm3.fontsize(8)
+gui.Form1.gsfgJobHist_3.create(gsflexgrid)
+gui.Form1.gsfgJobHist_3.FixedRows(0)
+gui.Form1.gsfgJobHist_3.FixedCols(0)
+gui.Form1.gsfgJobHist_3.visible(True)
+gui.Form1.gsfgJobHist_3.size(15270,10230)
+gui.Form1.gsfgJobHist_3.zorder(0)
+gui.Form1.gsfgJobHist_3.position(50,40)
+gui.Form1.gsfgJobHist_3.enabled(True)
+gui.Form1.gsfgJobHist_3.parent("tabx1",2)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Variable.Global.sPart.Declare(String)
+Variable.UDT.uJobHist.Define("sJob",String,Job)
+Variable.UDT.uJobHist.Define("sDate",Date,Date_Due)
+Variable.UDT.uJobHist.Define("sComments",String,Comment_1)
+Variable.uGlobal.uJobHist.Declare("uJobHist")
+Variable.UDT.uQltyAttr.Define("Qlty_Plan_Num",long,Qlty_Plan_num)
+Variable.UDT.uQltyAttr.Define("Attribute_Name",String,Attribute_Name)
+Variable.UDT.uQltyAttr.Define("Nominal",Float,Nominal)
+Variable.UDT.uQltyAttr.Define("High_Limit",Float,High_Limit)
+Variable.UDT.uQltyAttr.Define("Low_Limit",Float,Low_Limit)
+Variable.UDT.uQltyAttr.Define("Freq",Float,Frequency)
+Variable.UDT.uQltyAttr.Define("Method",String,Method)
+Variable.UDT.uQltyAttr.Define("Comment",String,Comment)
+Variable.UDT.uQltyAttr.Define("Qlty_Plan_ID",Long,Qlty_Plan_REC_ID)
+Variable.uGlobal.uQltyAttr.Declare("uQltyAttr")
+Variable.UDT.uDCC.Define("ID",Long)
+Variable.UDT.uDCC.Define("Path",String,Path)
+Variable.uGlobal.uDCC.Declare("uDCC")
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+F.ODBC.Connection!conX.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+F.Intrinsic.Control.If(V.Caller.Hook,=,"11010")
+	V.Passed.000202.set("Output 2 -Qlty")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.if(V.Caller.Hook,=,"11130")
+	F.intrinsic.string.GSSPartString(V.Passed.000014,V.Passed.000015,V.Global.sPart)
+	F.Intrinsic.Control.If(V.Global.sPart.Trim,=,"")
+		F.Intrinsic.UI.Msgbox("Router must be chosen.")
+		F.Intrinsic.Control.CallSub(Form1_unload)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.CallSub(Check_security)
+	F.Intrinsic.Control.CallSub(Buildstyle_jobhist_3)
+	F.Intrinsic.Control.CallSub(Buildstyle_qtyplan_2)
+	Gui.Form1.txtRouter.Text(V.Passed.000014)
+	Gui.Form1.txtRev.Text(V.Passed.000015)
+	Gui.Form1.txtRtrDesc.Text(V.Passed.000017)
+	Gui.Form1.tabx1.SetTab(0)
+	Gui.Form1..Show
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_2.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+program.sub.form1_unload.start
+F.Intrinsic.Control.SetErrorHandler("form1_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+F.ODBC.Connection!conX.Close
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("form1_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_2.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.form1_unload.end
+
+program.sub.cmdprev_1_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdprev_1_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'previous button was clicked on the DCC tab.
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdprev_1_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_2.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdprev_1_click.end
+
+program.sub.cmdnext_1_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdnext_1_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdnext_1_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_2.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdnext_1_click.end
+
+Program.Sub.Buildstyle_QtyPlan_2.Start
+F.Intrinsic.Control.SetErrorHandler("Buildstyle_QtyPlan_2_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sTitle.Declare(String)
+V.Local.sCOl.Declare(String)
+V.Local.iR.Declare(Long)
+V.Local.iC.Declare(Long)
+
+Gui.Form1.gsfgQtyPlan_2.Visible(False)
+Gui.Form1.gsfgQtyPlan_2.Rows(1)
+F.Intrinsic.String.Split("*!*THK*!*IC*!*WD*!*LG*!*HOLE*!*C'SINK*!*C'BORE*!*BALLDIM*!*Clear*!*Rad*!*CHAMF*!*Finished Press Flat","*!*",V.Local.sTitle)
+F.Intrinsic.Math.Add(V.Local.sTitle.UBound,1,V.Local.iR)
+Gui.Form1.gsfgQtyPlan_2.Rows(V.Local.ir)
+Gui.Form1.gsfgQtyPlan_2.FixedRows(1)
+F.Intrinsic.String.Split("Item*!*Nominal*!*High Limit*!*Low Limit*!*Frequency*!*Method*!*Comment*!*Quality Plan #","*!*",V.Local.sCol)
+
+F.Intrinsic.Math.add(V.Local.sCol.UBound,1,V.Local.iC)
+Gui.Form1.gsfgQtyPlan_2.Cols(V.Local.iC)
+Gui.Form1.gsfgQtyPlan_2.SetColumnPercentages(".15:.12:.12:.12:.12:.12:.12:.12")
+
+Gui.Form1.gsfgQtyPlan_2.TextMatrix(0,0,"Item")
+
+F.Intrinsic.Control.For(V.Local.iC,0,7,1)
+	Gui.Form1.gsfgQtyPlan_2.BuildStyle(1,V.Local.iC,"Format","ALignment",4)
+	Gui.Form1.gsfgQtyPlan_2.BuildStyle(1,V.Local.iC,"Fontstyle","Bold",True)
+	Gui.Form1.gsfgQtyPlan_2.BuildStyle(1,V.Local.iC,"Type","Locked",True)
+	Gui.Form1.gsfgQtyPlan_2.BuildStyle(2,V.Local.iC,"Format","ALignment",2)
+	Gui.Form1.gsfgQtyPlan_2.BuildStyle(2,V.Local.iC,"Type","Locked",True)
+F.Intrinsic.Control.Next(V.Local.iC)
+
+'do our column information for out item
+Gui.Form1.gsfgQtyPlan_2.BuildStyle(2,0,"Fontstyle","bold",True)
+F.Intrinsic.Control.For(V.Local.iR,0,V.Local.sCol.UBound,1)
+	Gui.Form1.gsfgQtyPlan_2.TextMatrix(V.Local.iR,0,V.Local.sCol(v.local.iR))
+F.Intrinsic.Control.Next(V.Local.iR)
+Gui.Form1.gsfgQtyPlan_2.ApplyStyle(0,1)
+'do our title information
+F.Intrinsic.Control.For(V.Local.iR,0,V.Local.sTitle.UBound,1)
+	Gui.Form1.gsfgQtyPlan_2.TextMatrix(0,V.Local.iR,V.Local.sTitle(v.local.iR))
+	Gui.Form1.gsfgQtyPlan_2.ApplyStyle(V.Local.iR,2)
+F.Intrinsic.Control.Next(V.Local.iR)
+
+Gui.Form1.gsfgQtyPlan_2.ApplyStyle(0,1)
+
+Gui.Form1.gsfgQtyPlan_2.Visible(True)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Buildstyle_QtyPlan_2_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_2.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Buildstyle_QtyPlan_2.End
+
+Program.Sub.Buildstyle_JobHist_3.Start
+F.Intrinsic.Control.SetErrorHandler("Buildstyle_JobHist_3_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sCol.Declare(String)
+V.Local.iC.Declare(Long)
+V.Local.sTitle.Declare(String)
+V.Local.iT.Declare(Long)
+
+Gui.Form1.gsfgJobHist_3.Rows(1)
+Gui.Form1.gsfgJobHist_3.Rows(2)
+Gui.Form1.gsfgJobHist_3.FixedRows(1)
+F.Intrinsic.String.Split("Job #*!*Date Due*!*Comments","*!*",V.Local.sCol)
+F.Intrinsic.Math.Add(V.Local.sCol.UBound,1,V.Local.iC)
+Gui.Form1.gsfgJobHist_3.Cols(V.local.iC)
+Gui.Form1.gsfgJobHist_3.SetColumnPercentages(".2:.3:.5")
+F.Intrinsic.Control.For(V.Local.iC,0,V.Local.sCol.UBound,1)
+	Gui.Form1.gsfgJobHist_3.BuildStyle(1,V.Local.iC,"Fontstyle","Bold",True)
+	Gui.Form1.gsfgJobHist_3.BuildStyle(1,V.Local.iC,"Format","Alignment",4)
+	Gui.Form1.gsfgJobHist_3.BuildStyle(1,V.Local.iC,"Type","Locked",True)
+	Gui.Form1.gsfgJobHist_3.BuildStyle(2,V.Local.iC,"Format","Alignment",2)
+	Gui.Form1.gsfgJobHist_3.BuildStyle(2,V.Local.iC,"Type","Locked",True)
+	Gui.Form1.gsfgJobHist_3.TextMatrix(V.Local.iC,0,V.Local.sCol(v.Local.iC))
+F.Intrinsic.Control.Next(V.Local.iC)
+
+Gui.Form1.gsfgJobHist_3.BuildStyle(2,0,"Fontstyle","Bold",True)
+Gui.Form1.gsfgJobHist_3.ApplyStyle(0,1)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Buildstyle_JobHist_3_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_2.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.Buildstyle_JobHist_3.End
+
+Program.Sub.Load_DCC.Start
+F.Intrinsic.Control.SetErrorHandler("Load_DCC_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iID.Declare(Long)
+V.Local.iGroup.Declare(Long)
+
+'this will be the subroutine that grabs the part and find document control groups of their specification(yet to be specified)
+'then we will load all the documents into a UDT that we can have load what they want.
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Load_DCC_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_2.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Load_DCC.End
+
+Program.Sub.Load_Qlty.Start
+F.Intrinsic.Control.SetErrorHandler("Load_Qlty_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iID.Declare(Long)
+V.Local.sSQL.Declare(String)
+
+'this sub will load our quality plan information
+'table pulling form. GCG_Styles_QLTY_ATTR, GCG_STYLES_QLTY_ETC, GCG_STYLES_QLTY_MAIN, GCG_STYLES_QLTY_MISC, GCG_STYLES_QLTY_Plan
+F.Intrinsic.Control.BlockEvents
+'first we have to get our rec id from GCG_INV_Style_Main, then based on that rec id we have to find out Qlty information
+F.Intrinsic.String.Build("select Rec_ID From GCG_INV_Style_Main where Part = '{0}'",V.Global.sPart,V.Local.sSQL)
+F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+	V.Local.iID.Set(V.ODBC.conX!rst.FieldValTrim!Rec_ID)
+	F.ODBC.conX!rst.Close
+	F.Intrinsic.String.Build("Select * From GCG_Styles_Qlty_Main Where Rec_ID = '{0}'",V.local.iID,V.Local.sSQL)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+		'grab our quality plan names.
+		F.Intrinsic.String.Build("Select * From GCG_Styles_Qlty_Plan Where Qlty_Plan_ID = '{0}' Order By Qlty_Plan_NO",V.ODBC.conX!rst.FieldValTrim!Qlty_Plan_ID,V.Local.sSQL)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst1",V.Local.sSQL)
+		Gui.Form1.ddlQualtiyPlan.ClearItems
+		F.Intrinsic.Control.DoUntil(V.ODBC.conX!rst1.EOF,=,True)
+			'reuse ssql to have the qlty plan number dash quality plan name so we don't get cornfused.
+			F.Intrinsic.String.Build("{0}-{1}",V.ODBC.conX!rst1.FieldValTrim!Qlty_Plan_NO,V.ODBC.conX!rst1.FieldValTrim!Qlty_Plan_Name,V.Local.sSQL)
+			Gui.Form1.ddlQualtiyPlan.AddItem(V.Local.sSQL)
+			F.ODBC.conX!rst1.MoveNext
+		F.Intrinsic.Control.Loop
+		F.ODBC.conX!rst1.Close
+'F.Intrinsic.Debug.InvokeDebugger
+'F.Intrinsic.Debug.Stop
+
+		'now we grab our attributes.
+		F.Intrinsic.String.Build("Select * From GCG_Styles_Qlty_Attr Where Qlty_Plan_rec_ID = '{0}'",V.ODBC.conX!rst.FieldValTrim!Qlty_Plan_ID,V.Local.sSQL)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst1",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.conX!rst1.EOF,<>,True)
+'F.Intrinsic.Debug.InvokeDebugger
+F.Intrinsic.Debug.Stop
+
+			F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst1","v.uglobal.uQltyAttr",False)
+			Gui.Form1.gsfgQtyPlan_2.Visible(False)
+			Gui.Form1.gsfgQtyPlan_2.LoadFromUDT("v.uglobal.uQltyAttr","Attribute_Name*!*Nominal*!*High_Limit*!*Low_Limit*!*Freq*!*Method*!*Comment*!*Qlty_Plan_Num",2)
+			Gui.Form1.gsfgQtyPlan_2.Visible(True)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conX!rst1.Close
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.UnBlockEvents
+		F.Intrinsic.UI.Msgbox("Quality Plan Information not found.")
+		F.ODBC.conX!rst.Close
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	F.ODBC.conX!rst.Close
+	F.Intrinsic.Control.UnBlockEvents
+	F.Intrinsic.UI.Msgbox("Quality Information not found for this Part")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Load_Qlty_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_2.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Load_Qlty.End
+
+Program.Sub.Load_Job_Hist.Start
+F.Intrinsic.Control.SetErrorHandler("Load_Job_Hist_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+
+V.uGlobal.uJobHist.Redim(-1,-1)
+
+F.Intrinsic.String.Build("Select Distinct GCG.Job, JH.Date_Due, GCG.Comment_1 From GCG_RTR_Hist_Job AS GCG Left Join V_Job_Header As JH On Cast(GCG.Job As Char(9)) = Concat(JH.Job,JH.Suffix) Where Part = '{0}' Order by GCG.Job",V.Global.sPart,V.Local.sSQL)
+
+F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+	F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst","v.uglobal.ujobHist",False)
+F.Intrinsic.Control.EndIf
+F.ODBC.conX!rst.Close
+
+F.Intrinsic.Control.If(V.uGlobal.uJobHist.UBound,<>,-1)
+	Gui.Form1.gsfgJobHist_3.LoadFromUDT("v.uglobal.uJobHist","sJob*!*sDate*!*sComments",2)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Load_Job_Hist_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_2.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Load_Job_Hist.End
+
+program.sub.tabx1_click.start
+F.Intrinsic.Control.SetErrorHandler("tabx1_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iTab.Declare(Long)
+F.Intrinsic.Control.BlockEvents
+
+V.Local.iTab.Set(V.Screen.Form1!tabx1.Tab)
+'what tab are we on?
+F.Intrinsic.Control.SelectCase(V.Local.iTab)
+	F.Intrinsic.Control.Case(0)
+		'we are on the dcc tab which will be loaded.
+	F.Intrinsic.Control.Case(1)
+		'we are on our qlty tab
+		F.Intrinsic.Control.CallSub(Load_qlty)
+	F.Intrinsic.Control.Case(2)
+		F.Intrinsic.Control.CallSub(Load_job_hist)
+	F.Intrinsic.Control.CaseElse
+		F.Intrinsic.Control.UnBlockEvents
+
+		F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndSelect
+
+F.Intrinsic.Control.UnBlockEvents
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("tabx1_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_2.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.tabx1_click.end
+
+Program.Sub.Check_Security.Start
+F.Intrinsic.Control.SetErrorHandler("Check_Security_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+V.Local.sGroups.Declare(String)
+V.Local.sUser.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.iID.Declare(Long)
+V.Local.iG.Declare(Long)
+V.Local.bR.Declare(Boolean)
+V.Local.bRW.Declare(Boolean,False)
+
+F.Global.Security.GetuserID(V.Caller.User,V.Caller.CompanyCode,V.Local.iID)
+F.Intrinsic.String.Build("Select U_G_Name,Flag_R, Flag_RW From GCG_Styles_Security Where User_Group_Flag = 'U' And U_G_ID = '{0}'",V.Local.iID,V.Local.sSQL)
+F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+	F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldValTrim!Flag_RW,=,1)
+		V.Local.bRW.Set(True)
+	F.Intrinsic.Control.Else
+		V.Local.bRW.Set(False)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldValTrim!Flag_R,=,1)
+		V.Local.bR.Set(True)
+	F.Intrinsic.Control.Else
+		V.Local.bR.Set(False)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conX!rst.Close
+F.Intrinsic.Control.Else
+	F.ODBC.conX!rst.Close
+	'look for groupies.
+	F.Global.Security.GetUserGroupsByID(v.Caller.User,v.Caller.CompanyCode,v.Local.sGroups)
+	F.Intrinsic.Control.If(V.Local.sGroups.Trim,<>,"")
+		F.Intrinsic.String.Split(V.Local.sGroups,"*!*",V.Local.sGroups)
+		F.Intrinsic.Control.For(V.Local.iG,0,V.Local.sGroups.UBound,1)
+			F.Intrinsic.String.Build("Select * From GCG_Styles_Security Where USer_Group_Flag = 'G' And U_G_ID = '{0}'",V.Local.sGroups(v.Local.iG).Trim,V.Local.sSQL)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+			F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+				'read the values
+				F.Intrinsic.Control.If(V.ODBC.conX!rst.fieldvalTrim!Flag_RW,=,1)
+					V.Local.bRW.Set(True)
+				F.Intrinsic.Control.Else
+					V.Local.bRW.Set(False)
+				F.Intrinsic.Control.EndIf
+				
+				F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldValTrim!Flag_R,=,1)
+					V.Local.bR.Set(True)
+				F.Intrinsic.Control.Else
+					V.Local.bR.Set(False)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+			F.ODBC.conX!rst.Close
+			F.Intrinsic.Control.If(V.Local.bRW,=,True)
+				F.Intrinsic.Control.ExitFor(V.Local.iG)
+			F.Intrinsic.Control.ElseIf(V.Local.bR,=,True)
+				F.Intrinsic.Control.ExitFor(V.Local.iG)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Next(V.Local.iG)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Local.bRW,=,True)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.ElseIf(V.Local.bR,=,True)
+	'here is where stuff would be locked, but it doesnt really matter becuase its already locked, but we need to make sure they don't have proper permissions.
+F.Intrinsic.Control.else
+	F.Intrinsic.UI.Msgbox("You do not have proper permission to access this inormation...")
+	F.Intrinsic.Control.CallSub(Form1_unload)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Check_Security_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_2.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Check_Security.End
+
+
