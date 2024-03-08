@@ -1,0 +1,1225 @@
+Program.Sub.ScreenSU.Start
+gui.SS_Form1..create
+gui.SS_Form1..caption("Router Style Sheet")
+gui.SS_Form1..size(17460,13440)
+gui.SS_Form1..minx(0)
+gui.SS_Form1..miny(0)
+gui.SS_Form1..position(0,0)
+gui.SS_Form1..event(unload,ss_form1_unload)
+gui.SS_Form1..alwaysontop(False)
+gui.SS_Form1..fontname("Arial")
+gui.SS_Form1..fontsize(8)
+gui.SS_Form1..forecolor(0)
+gui.SS_Form1..fontstyle(,,,,)
+gui.SS_Form1..BackColor(-2147483633)
+gui.SS_Form1..controlbox(True)
+gui.SS_Form1..maxbutton(False)
+gui.SS_Form1..minbutton(False)
+gui.SS_Form1..mousepointer(0)
+gui.SS_Form1..moveable(True)
+gui.SS_Form1..sizeable(False)
+gui.SS_Form1..ShowInTaskBar(True)
+gui.SS_Form1..titlebar(True)
+gui.SS_Form1.lbl_txtPart.create(label,"Part",True,1800,200,1,100,135,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtPart.defaultvalue("")
+gui.SS_Form1.lbl_txtPart.controlgroup(0)
+gui.SS_Form1.txtPart.create(textbox,"",True,2250,330,0,100,335,False,0,Arial,8,16777215,1)
+gui.SS_Form1.txtPart.defaultvalue("")
+gui.SS_Form1.txtPart.controlgroup(0)
+gui.SS_Form1.lbl_txtRev.create(label,"Rev",True,1800,200,1,2435,135,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtRev.defaultvalue("")
+gui.SS_Form1.lbl_txtRev.controlgroup(0)
+gui.SS_Form1.txtRev.create(textbox,"",True,900,330,0,2435,335,False,0,Arial,8,16777215,1)
+gui.SS_Form1.txtRev.defaultvalue("")
+gui.SS_Form1.txtRev.controlgroup(0)
+gui.SS_Form1.lbl_txtPartXRef.create(label,"Part X Ref",True,1800,200,1,3420,135,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtPartXRef.defaultvalue("")
+gui.SS_Form1.lbl_txtPartXRef.controlgroup(0)
+gui.SS_Form1.txtPartXRef.create(textbox,"",True,1800,330,0,3420,335,False,0,Arial,8,16777215,1)
+gui.SS_Form1.txtPartXRef.defaultvalue("")
+gui.SS_Form1.txtPartXRef.controlgroup(0)
+gui.SS_Form1.lbl_txtCustXRef.create(label,"Customer X Ref",True,1800,200,1,5305,135,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtCustXRef.defaultvalue("")
+gui.SS_Form1.lbl_txtCustXRef.controlgroup(0)
+gui.SS_Form1.txtCustXRef.create(textbox,"",True,1800,330,0,5305,335,False,0,Arial,8,16777215,1)
+gui.SS_Form1.txtCustXRef.defaultvalue("")
+gui.SS_Form1.txtCustXRef.controlgroup(0)
+gui.SS_Form1.lbl_txtPL.create(label,"PL",True,1800,200,1,7190,135,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtPL.defaultvalue("")
+gui.SS_Form1.lbl_txtPL.controlgroup(0)
+gui.SS_Form1.txtPL.create(textbox,"",True,900,330,0,7190,335,False,0,Arial,8,16777215,1)
+gui.SS_Form1.txtPL.defaultvalue("")
+gui.SS_Form1.txtPL.controlgroup(0)
+gui.SS_Form1.lbl_txtSortCode.create(label,"Sort Code",True,1800,200,1,8175,135,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtSortCode.defaultvalue("")
+gui.SS_Form1.lbl_txtSortCode.controlgroup(0)
+gui.SS_Form1.txtSortCode.create(textbox,"",True,1800,330,0,8175,335,False,0,Arial,8,16777215,1)
+gui.SS_Form1.txtSortCode.defaultvalue("")
+gui.SS_Form1.txtSortCode.controlgroup(0)
+gui.SS_Form1.cmdSave.create(button)
+gui.SS_Form1.cmdSave.caption("Save")
+gui.SS_Form1.cmdSave.visible(True)
+gui.SS_Form1.cmdSave.size(1000,360)
+gui.SS_Form1.cmdSave.zorder(0)
+gui.SS_Form1.cmdSave.position(100,12315)
+gui.SS_Form1.cmdSave.enabled(True)
+gui.SS_Form1.cmdSave.fontname("Arial")
+gui.SS_Form1.cmdSave.fontsize(8)
+gui.SS_Form1.cmdSave.event(click,cmdsave_click)
+gui.SS_Form1.cmdSave.defaultvalue("")
+gui.SS_Form1.cmdSave.controlgroup(0)
+gui.SS_Form1.gsfgJobs.create(gsflexgrid)
+gui.SS_Form1.gsfgJobs.FixedRows(0)
+gui.SS_Form1.gsfgJobs.FixedCols(0)
+gui.SS_Form1.gsfgJobs.visible(True)
+gui.SS_Form1.gsfgJobs.size(16995,11400)
+gui.SS_Form1.gsfgJobs.zorder(0)
+gui.SS_Form1.gsfgJobs.position(100,800)
+gui.SS_Form1.gsfgJobs.enabled(True)
+gui.SS_Form1.gsfgJobs.event(posttextmatrix,gsfgjobs_posttextmatrix)
+gui.SS_Form1.cmdMoveCurrent.create(button)
+gui.SS_Form1.cmdMoveCurrent.caption("Move Current Job to History")
+gui.SS_Form1.cmdMoveCurrent.visible(True)
+gui.SS_Form1.cmdMoveCurrent.size(1725,480)
+gui.SS_Form1.cmdMoveCurrent.zorder(0)
+gui.SS_Form1.cmdMoveCurrent.position(10110,270)
+gui.SS_Form1.cmdMoveCurrent.enabled(True)
+gui.SS_Form1.cmdMoveCurrent.fontname("Arial")
+gui.SS_Form1.cmdMoveCurrent.fontsize(8)
+gui.SS_Form1.cmdMoveCurrent.event(click,cmdmovecurrent_click)
+gui.SS_Form1.cmdMoveCurrent.tooltip("This button will move current job information into Job History 1. This will free up the current job information column.")
+gui.SS_Form1.cmdMoveCurrent.defaultvalue("")
+gui.SS_Form1.cmdMoveCurrent.controlgroup(0)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Variable.Global.sPart.Declare(String)
+Variable.UDT.uCurrJob.Define("REC_ID",Long,REC_ID)
+Variable.UDT.uCurrJob.Define("PART",STRING,PART)
+Variable.UDT.uCurrJob.Define("SHAPE",STRING,CODE_SHAPE)
+Variable.UDT.uCurrJob.Define("HIST_ID",LONG,)
+Variable.UDT.uCurrJob.Define("DIE_NO",FLOAT,DIE_NO)
+Variable.UDT.uCurrJob.Define("PRESS_THICKNESS",FLOAT,PRESS_THICKNESS)
+Variable.UDT.uCurrJob.Define("NIB_THICKNESS",FLOAT,NIB_THICKNESS)
+Variable.UDT.uCurrJob.Define("MIC",FLOAT,MIC)
+Variable.UDT.uCurrJob.Define("CHOKE_DEPTH",FLOAT,CHOKE_DEPTH)
+Variable.UDT.uCurrJob.Define("GREEN_VOLUME",FLOAT,GREEN_VOLUME)
+Variable.UDT.uCurrJob.Define("GREEN_DENSITY",FLOAT,GREEN_DENSITY)
+Variable.UDT.uCurrJob.Define("CALCULATED",FLOAT,CALCULATED)
+Variable.UDT.uCurrJob.Define("ACT_VOLUME",FLOAT,ACT_VOLUME)
+Variable.UDT.uCurrJob.Define("SHRINKAGE",FLOAT,SHRINKAGE)
+Variable.UDT.uCurrJob.Define("UNDER_FILL",FLOAT,UNDER_FILL)
+Variable.UDT.uCurrJob.Define("CONTOUR_FILL_1",FLOAT,CONTOUR_FILL_1)
+Variable.UDT.uCurrJob.Define("CONTOUR_FILL_2",FLOAT,CONTOUR_FILL_2)
+Variable.UDT.uCurrJob.Define("TOP_PRESS",FLOAT,TOP_PRESS)
+Variable.UDT.uCurrJob.Define("BOTTOM_PRESS",FLOAT,BOTTOM_PRESS)
+Variable.UDT.uCurrJob.Define("COMMENT_1",STRING,COMMENT_1)
+Variable.UDT.uCurrJob.Define("COMMENT_2",STRING,COMMENT_2)
+Variable.UDT.uCurrJob.Define("CAVITY_NO",Float,CAVITY_NO)
+Variable.UDT.uCurrJob.Define("JOB",String,JOB)
+Variable.UDT.uCurrJob.Define("ADJ_PRESS_QTY",Float,ADJ_PRESS_QTY)
+Variable.uGlobal.uCurrJob.Declare("uCurrJob")
+Variable.UDT.uHistJOb.Define("REC_ID",Long,REC_ID)
+Variable.UDT.uHistJOb.Define("HIST_ID",Long,HIST_ID)
+Variable.UDT.uHistJOb.Define("JOB",String,Job)
+Variable.UDT.uHistJOb.Define("PART",STRING,PART)
+Variable.UDT.uHistJOb.Define("SHAPE",STRING,CODE_SHAPE)
+Variable.UDT.uHistJOb.Define("DIE_NO",FLOAT,DIE_NO)
+Variable.UDT.uHistJOb.Define("PRESS_THICKNESS",FLOAT,PRESS_THICKNESS)
+Variable.UDT.uHistJOb.Define("NIB_THICKNESS",FLOAT,NIB_THICKNESS)
+Variable.UDT.uHistJOb.Define("MIC",FLOAT,MIC)
+Variable.UDT.uHistJOb.Define("CHOKE_DEPTH",FLOAT,CHOKE_DEPTH)
+Variable.UDT.uHistJOb.Define("GREEN_VOLUME",FLOAT,GREEN_VOLUME)
+Variable.UDT.uHistJOb.Define("GREEN_DENSITY",FLOAT,GREEN_DENSITY)
+Variable.UDT.uHistJOb.Define("CALCULATED",FLOAT,CALCULATED)
+Variable.UDT.uHistJOb.Define("ACT_VOLUME",FLOAT,ACT_VOLUME)
+Variable.UDT.uHistJOb.Define("SHRINKAGE",FLOAT,SHRINKAGE)
+Variable.UDT.uHistJOb.Define("UNDER_FILL",FLOAT,UNDER_FILL)
+Variable.UDT.uHistJOb.Define("CONTOUR_FILL_1",FLOAT,CONTOUR_FILL_1)
+Variable.UDT.uHistJOb.Define("CONTOUR_FILL_2",FLOAT,CONTOUR_FILL_2)
+Variable.UDT.uHistJOb.Define("TOP_PRESS",FLOAT,TOP_PRESS)
+Variable.UDT.uHistJOb.Define("BOTTOM_PRESS",FLOAT,BOTTOM_PRESS)
+Variable.UDT.uHistJOb.Define("COMMENT_1",STRING,COMMENT_1)
+Variable.UDT.uHistJOb.Define("COMMENT_2",STRING,COMMENT_2)
+Variable.UDT.uHistJOb.Define("ADJ_PRESS_QTY",STRING,ADJ_PRESS_QTY)
+Variable.UDT.uHistJOb.Define("CAVITY_NO",STRING,CAVITY_NO)
+Variable.uGlobal.uHistJOb.Declare("uHistJOb")
+
+Variable.UDT.uHistDie.Define("REC_ID",Long,REC_ID)
+Variable.UDT.uHistDie.Define("DIE_NO",Long,DIE_NO)
+Variable.UDT.uHistDie.Define("DIE_SIZE_TXT",String,DIE_SIZE_TXT)
+Variable.UDT.uHistDie.Define("HIST_ID",Long,HIST_ID)
+Variable.uGlobal.uHistDie.Declare("uHistDie")
+
+Variable.UDT.uCurrDie.Define("REC_ID",Long,REC_ID)
+Variable.UDT.uCurrDie.Define("DIE_NO",Long,DIE_NO)
+Variable.UDT.uCurrDie.Define("DIE_SIZE_TXT",String,DIE_SIZE_TXT)
+Variable.UDT.uCurrDie.Define("HIST_DIE",Long,)
+Variable.uGlobal.uCurrDie.Declare("uCurrDIe")
+
+Variable.UDT.uHistEtc.Define("REC_ID",Long,REC_ID)
+Variable.UDT.uHistEtc.Define("ETC_NO",Long,ETC_NO)
+Variable.UDT.uHistEtc.Define("ETC_VALUE",String,ETC_VALUE)
+Variable.UDT.uHistEtc.Define("HIST_ID",Long,HIST_ID)
+Variable.uGlobal.uHistEtc.Declare("uHistEtc")
+
+Variable.UDT.uCurrEtc.Define("REC_ID",Long,REC_ID)
+Variable.UDT.uCurrEtc.Define("ETC_NO",Long,ETC_NO)
+Variable.UDT.uCurrEtc.Define("ETC_VALUE",String,ETC_VALUE)
+Variable.UDT.uCurrEtc.Define("HIST_ID",String,)
+Variable.uGlobal.uCurrEtc.Declare("uCurrEtc")
+
+
+
+Variable.Global.iRecID.Declare(Long,0)
+Variable.Global.bRWGRid.Declare(Boolean,False)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Caller.Hook,=,11010)
+	V.Passed.000201.Set(" Output 1-Prod")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Caller.Hook,=,11120)
+	F.Intrinsic.String.GSSPartString(V.Passed.000014,V.Passed.000015,V.Global.sPart)
+'	V.Global.sPart.Set("0025")
+	F.Intrinsic.Control.If(V.Global.sPart.Trim,=,"")
+		F.Intrinsic.UI.Msgbox("Router must be chosen before continuing.")
+		F.Intrinsic.Control.End
+	F.Intrinsic.Control.EndIf
+	F.ODBC.Connection!conX.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+	F.Intrinsic.Control.CallSub(Check_security)
+	V.uGlobal.uCurrDie.Redim(-1,-1)
+	V.uGlobal.uCurrEtc.Redim(-1,-1)
+	V.uGlobal.uCurrJob.Redim(-1,-1)
+	V.uGlobal.uHistDie.Redim(-1,-1)
+	V.uGlobal.uHistEtc.redim(-1,-1)
+	V.uGlobal.uHistJOb.Redim(-1,-1)
+	F.Intrinsic.UI.InvokeWaitDialog("Loading...")
+	F.Intrinsic.Control.CallSub(Buildstyle_gsfgjobs)
+	F.Intrinsic.Control.CallSub(Load_curr_jobs)
+	F.Intrinsic.Control.CallSub(Load_hist_jobs)
+	F.Intrinsic.Control.CallSub(Load_header)
+	F.Intrinsic.Control.CallSub(Load_screen)
+	F.Intrinsic.UI.CloseWaitDialog
+	Gui.SS_Form1..Show
+F.Intrinsic.Control.Endif
+
+'F.Intrinsic.UI.Msgbox(V.Global.iRecID,"rec ID")
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_1.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+program.sub.ss_form1_unload.start
+F.ODBC.Connection!conX.close
+F.Intrinsic.Control.End
+
+program.sub.ss_form1_unload.end
+
+Program.Sub.Buildstyle_GSFGJobs.Start
+V.Local.sTitle.Declare(String)
+V.Local.iT.Declare(Long)
+V.Local.sDieArray.Declare(String)
+V.Local.sColTitle.Declare(String)
+V.Local.sUDT.Declare(String)
+V.Local.sUDTString.Declare(String)
+V.Local.sETC.Declare(String)
+V.Local.sRows.Declare(String)
+V.Local.iR.Declare(Long)
+V.Local.sRet.Declare(String)
+V.Local.iLastRow.Declare(Long)
+
+Gui.SS_Form1.gsfgJobs.Visible(False)
+Gui.SS_Form1.gsfgJobs.Rows(1)
+
+Gui.SS_Form1.gsfgJobs.SetProperty("AllowCollapse",1)
+
+F.Intrinsic.String.Split("*!*UDT_Element*!*Item*!*Current Job*!*Job 1*!*Job 2*!*Job 3*!*Job 4*!* Job 5","*!*",V.Local.sColTitle)
+V.Local.sTitle.Redim(0,19)
+V.Local.sUDT.Redim(0,19)
+F.Intrinsic.Control.For(V.local.iT,0,19,1)
+	F.Intrinsic.Math.Add(V.Local.it,1,V.Local.iR)
+'	F.Intrinsic.String.Concat(v.local.scoltitle(3),"Die #",V.Local.iR," column. ",V.Local.sTitle(v.Local.iT))
+	'build this. 1 is going to be for our visible columns, then the other is going to be for our udt's
+	F.Intrinsic.String.Build("Die # {0}",V.Local.iR,V.Local.sTitle(v.Local.iT))
+	F.Intrinsic.String.Build("DIE_{0}",V.Local.iR,V.Local.sUDT(v.Local.iT))
+F.Intrinsic.Control.Next(V.Local.iT)
+'jointhem together so we can concat them.
+F.Intrinsic.String.Join(V.Local.sTitle,"*!*",V.Local.sDieArray)
+F.Intrinsic.String.Join(V.Local.sUDT,"*!*",V.Local.sUDT)
+
+F.Intrinsic.String.Concat("*!*Job*!*Shape*!*Die #*!*Press Thickness*!*NIB Thickness*!*MIC*!*Choke Depth*!*Green Volume*!*Green Density Calc*!*Calculated Volume*!*Actual Volume CM*!*Shrinkage*!*Under Fill*!*Contour Fill 1 *!*Contour Fill 2 *!*Top Press*!*Bottom Press *!*Comment 1*!*Comment 2*!*Adj Press Qty*!*# of Cavity*!*",V.local.sDieArray,V.Local.sRows)
+F.Intrinsic.String.Concat("*!*Job*!*Shape*!*Die_NO*!*Press_Thickness*!*NIB_Thickness*!*MIC*!*Choke_Depth*!*Green_Volume*!*Green_Density*!*Calculated*!*Act_Volume*!*Shrinkage*!*Under_Fill*!*Contour_Fill_1 *!*Contour_Fill_2 *!*Top_Press*!*Bottom_Press*!*Comment_1*!*Comment_2*!*Adj_Press_Qty*!*Cavity_NO*!*",V.local.sUDT,V.Local.sUDTString)
+F.Intrinsic.String.UCase(V.Local.sUDTString,V.Local.sUDTString)
+'F.Intrinsic.String.Split(V.Local.sRows,"*!*",V.Local.sRows)
+'going to try and replacedie with etc and grab it on there.
+F.Intrinsic.String.Replace(V.Local.sDieArray,"Die ","Etc ",V.Local.sDieArray)
+F.Intrinsic.String.Replace(V.Local.sUDT,"DIE_","ETC_",V.Local.sUDT)
+F.Intrinsic.String.Concat(V.Local.sRows,"*!*",V.Local.sDieArray,V.Local.sRows)
+F.Intrinsic.String.Concat(V.Local.sUDTString,"*!*",V.Local.sUDT,V.Local.sUDTString)
+
+'F.Intrinsic.Control.For(V.local.iT,0,19,1)
+'	F.Intrinsic.Math.Add(V.Local.it,1,V.Local.iR)
+'	
+'F.Intrinsic.Control.Next(V.Local.iT)
+F.Intrinsic.String.Split(V.Local.sTitle,"*!*",V.Local.sTitle)
+F.Intrinsic.String.Split(V.Local.sUDTString,"*!*",V.Local.sUDTString)
+
+
+'COLUMN********************************************************
+'build our buildstyle, based off of our scoltitle ubound plus 1
+F.Intrinsic.Math.Add(V.Local.sColTitle.UBound,1,V.Local.iT)
+'F.Intrinsic.UI.Msgbox(V.Local.iT,"Columns.")
+Gui.SS_Form1.gsfgJobs.Cols(V.Local.iT)
+
+Gui.SS_Form1.gsfgJobs.SetColumnPercentages(".01:.0:.12:.14:.14:.14:.14:.14:.14")
+
+
+F.Intrinsic.Control.For(V.Local.iR,0,V.Local.sColTitle.UBound,1)
+	F.Intrinsic.Math.Add(V.Local.iR,1,V.Local.iT)
+	Gui.SS_Form1.gsfgJobs.BuildStyle(1,V.Local.iR,"Fontstyle","Bold",True)
+	Gui.SS_Form1.gsfgJobs.BuildStyle(1,V.Local.iR,"Type","Locked",True)
+	Gui.SS_Form1.gsfgJobs.BuildStyle(1,V.Local.iR,"Format","Alignment",4)
+	Gui.SS_Form1.gsfgJobs.BuildStyle(2,V.Local.iR,"Format","Alignment",2)
+	Gui.SS_Form1.gsfgJobs.BuildStyle(2,V.Local.iR,"Fontstyle","Bold",True)
+	F.Intrinsic.Control.If(V.Local.iR,<>,3)
+		Gui.SS_Form1.gsfgJobs.BuildStyle(2,V.Local.iR,"Type","Locked",True)
+	F.Intrinsic.Control.Else
+		Gui.SS_Form1.gsfgJobs.BuildStyle(2,V.Local.iR,"Type","Locked",V.Global.bRWGRid)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.If(V.Local.iR,>,2)
+		Gui.SS_Form1.gsfgJobs.BuildStyle(2,V.Local.iR,"Fontstyle","Bold",False)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.If(V.Local.ir,>,3)
+		Gui.SS_Form1.gsfgJobs.BuildStyle(2,V.Local.iR,"Type","Locked",True)
+	F.Intrinsic.Control.EndIf
+	Gui.SS_Form1.gsfgJobs.TextMatrix(V.Local.iR,0,V.Local.sColTitle(v.Local.iR))
+F.Intrinsic.Control.Next(V.Local.iR)
+
+Gui.SS_Form1.gsfgJobs.ApplyStyle(0,1)
+
+Gui.SS_Form1.gsfgJobs.BuildStyle(2,0,"Fontstyle","Bold",True)
+'COLUMN********************************************************
+F.Intrinsic.String.Split(V.Local.sRows,"*!*",V.Local.sRows)
+
+F.Intrinsic.Math.Add(V.Local.sRows.UBound,1,V.Local.iT)
+Gui.SS_Form1.gsfgJobs.Rows(V.Local.iT)
+
+Gui.SS_Form1.gsfgJobs.FixedRows(1)
+Gui.SS_Form1.gsfgJobs.SetProperty("Enter",1)
+
+'Set the Collapse property on the flexgrid
+'Gui.F_GFM_Shipments.gsShip.SetProperty("AllowCollapse",1)
+
+
+'Gui.SS_Form1.gsfgJobs.Visible(True)
+'Gui.SS_Form1..Show
+'ROW
+F.Intrinsic.Control.For(V.Local.iR,1,V.Local.sRows.UBound,1)
+	F.Intrinsic.Control.If(V.Local.iR,>,22)
+	F.Intrinsic.Control.AndIf(V.Local.iR,<,42)
+		Gui.SS_Form1.gsfgJobs.SetParentRow(V.Local.iR,22)
+	F.Intrinsic.Control.ElseIf(V.Local.iR,>,42)
+		Gui.SS_Form1.gsfgJobs.SetParentRow(V.Local.iR,42)
+	F.Intrinsic.Control.EndIf
+			
+''			Gui.SS_Form1.gsfgJobs.SetParentRow(V.Local.iR,V.Local.iLastRow)
+'		F.Intrinsic.Control.EndIf
+''		Gui.SS_Form1.gsfgJobs.SetParentRow(V.Local.iLastRow,V.Local.iR)
+'		
+'	F.Intrinsic.Control.EndIf
+	Gui.SS_Form1.gsfgJobs.TextMatrix(1,V.Local.iR,V.Local.sUDTString(v.Local.iR))
+	Gui.SS_Form1.gsfgJobs.TextMatrix(2,V.Local.iR,V.Local.sRows(v.Local.iR))
+	Gui.SS_Form1.gsfgJobs.ApplyStyle(V.Local.iR,2)
+F.Intrinsic.Control.Next(V.Local.iR)
+Gui.SS_Form1.gsfgJobs.HideAll
+Gui.SS_Form1.gsfgJobs.Visible(True)
+
+
+
+
+
+
+Program.Sub.Buildstyle_GSFGJobs.End
+
+Program.Sub.Load_Curr_Jobs.Start
+F.Intrinsic.Control.SetErrorHandler("Load_Curr_Jobs_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.iRec.Declare(Long)
+V.Local.sUDTBase.Declare(String)
+V.Local.iC.Declare(Long)
+
+F.Intrinsic.String.Build("Select * From GCG_RTR_Curr_Job Where Part = '{0}'",V.Global.sPart,V.local.sSQL)
+F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+	F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst","v.uglobal.uCurrJob",False)
+F.Intrinsic.Control.Else
+	'meaning we don't have any records for this one so lets build of UDT to be what we need it to be.
+	V.uGlobal.uCurrJob.Redim(0,0)
+	V.uGlobal.uCurrJob(0)!PART.Set(V.Global.sPart)
+F.Intrinsic.Control.EndIf
+F.ODBC.conX!rst.Close
+
+'load die and etc from current
+F.Intrinsic.Control.If(V.uGlobal.uCurrJob.UBound,<>,-1)
+'get our recid and set it to our global variable for later use.
+	V.Global.iRecID.Set(V.uGlobal.uCurrJob(0)!REC_ID)
+	'etc size 1 thorugh 20
+	F.Intrinsic.String.Build("Select * From GCG_RTR_Curr_ETC Where Rec_ID = '{0}' Order By ETC_NO",V.Global.iRecID,V.Local.sSQL)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+		F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst","v.uglobal.uCurrETC",False)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.For(V.Local.iC,1,20,1)
+			F.Intrinsic.Control.If(V.Local.sUDTBase.Trim,=,"")
+				V.Local.sUDTBase.Set(V.Local.iC)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Build("{0}*!*{1}",V.Local.sUDTBase,V.Local.iC,V.Local.sUDTBase)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Next(V.Local.iC)
+		F.Intrinsic.Variable.LoadUDTFromString(V.uglobal.uCurrETC,"ETC_NO",V.Local.sUDTBase,"*!*","",False)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conX!rst.Close
+	'die size current 10 through 20
+	F.Intrinsic.String.Build("Select * From GCG_RTR_Curr_DIE Where Rec_ID = '{0}' Order By DIE_NO",V.global.iRecID,V.Local.sSQL)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+		F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst","v.uglobal.uCurrDie",False)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.If(V.Local.sUDTBase.Trim,=,"")
+			F.Intrinsic.Control.For(V.Local.iC,1,20,1)
+				F.Intrinsic.Control.If(V.Local.sUDTBase.Trim,=,"")
+					V.Local.sUDTBase.Set(V.Local.iC)
+				F.Intrinsic.Control.Else
+					F.Intrinsic.String.Build("{0}*!*{1}",V.Local.sUDTBase,V.Local.iC,V.Local.sUDTBase)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.Next(V.Local.iC)
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Variable.LoadUDTFromString(V.uglobal.uCurrDIE,"Die_NO",V.Local.sUDTBase,"*!*","",False)
+F.Intrinsic.Control.EndIf
+	F.ODBC.conX!rst.Close
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Load_Curr_Jobs_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_1.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Load_Curr_Jobs.End
+
+program.sub.cmdmovecurrent_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdmovecurrent_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iRet.Declare(Long)
+V.Local.sSQL.Declare(String)
+
+'nothing to move yet.
+F.Intrinsic.Control.If(V.Global.iRecID,<=,0)
+	F.Intrinsic.Control.ExitSub
+'should we save it first?
+F.Intrinsic.Control.EndIf
+
+'V.Local.sSQL.Redim(0,2)4
+F.Intrinsic.UI.Msgbox("Move current job to history?","Move Current Job",68,V.Local.iRet)
+
+F.Intrinsic.Control.If(V.Local.iRet,=,6)
+	F.Intrinsic.UI.InvokeWaitDialog("Moving current job to history...")
+	'check to make sure that our current job number is not blank.
+	F.Intrinsic.Control.If(V.uGlobal.uCurrJob.UBound,=,-1)
+		F.Intrinsic.UI.Msgbox("Current Job information has not been entered. Continue?","Continue moving?",68,V.Local.iRet)
+		F.Intrinsic.Control.If(V.Local.iRet,<>,6)
+			F.Intrinsic.ui.CloseWaitDialog
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		'meaning we hav esomething in our udt lets check our job num
+		F.Intrinsic.Control.If(V.uGlobal.uCurrJob(0)!JOB.Trim,=,"")
+		F.Intrinsic.UI.Msgbox("Current Job number is blank. Continue?","Continue moving?",68,V.Local.iRet)
+			F.Intrinsic.Control.If(V.Local.iRet,<>,6)
+				F.Intrinsic.UI.CloseWaitDialog
+				F.Intrinsic.Control.ExitSub
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.BlockEvents
+	'heres gonna be fun.
+	'we need to copy over to history the current information, clear out our udt of the current information, reload the grid,
+	'then go through our history tables, blow away hist id record of 5, including our etc or die information that may be in there.
+	'then update our current to hist id 1 then go through and move the next ones up.
+	'delete our records that have a five in it.
+	'delete statment to remove our history record with hist id of 5
+	F.Intrinsic.String.Build("Delete From GCG_RTR_Hist_Job Where Rec_ID = '{0}' And Hist_ID = '5'",V.Global.iRecID,V.Local.sSQL)
+	F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+	F.Intrinsic.String.Build("Delete From GCG_RTR_Hist_DIE Where Rec_ID = '{0}' And Hist_ID = '5'",V.Global.iRecID,V.Local.sSQL)
+	F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+	F.Intrinsic.String.Build("Delete From GCG_RTR_Hist_ETC Where Rec_ID = '{0}' And Hist_ID = '5'",V.Global.iRecID,V.Local.sSQL)
+	F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+	
+	'then increment all our current 1 thoruhg 4 to plus 1, so 1 becomes 2 and so on and so forth.
+	F.Intrinsic.String.Build("Update GCG_RTR_Hist_Job Set HIST_ID = Hist_ID + 1 Where Rec_ID = '{0}'",V.Global.iRecID,V.Local.sSQL)
+	F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+	F.Intrinsic.String.Build("Update GCG_RTR_Hist_ETC Set HIST_ID = Hist_ID + 1 Where Rec_ID='{0}'",V.Global.iRecID,V.Local.sSQL)
+	F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+	F.Intrinsic.String.Build("Update GCG_RTR_Hist_DIE Set HIST_ID = Hist_ID + 1 Where Rec_ID='{0}'",V.Global.iRecID,V.Local.sSQL)
+	F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+	'move our current record to history and clear out our current one.
+	'THATS WHAT OUR HIST LONG VALUES ARE FOR IN OUR UDT.
+	F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uCurrJob!HIST_ID,"1")
+	F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uCurrDie!HIST_DIE,"1")
+	F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uCurrETC!HIST_ID,"1")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uCurrJob!HIST_ID,"HIST_ID")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uCurrDie!HIST_DIE,"HIST_ID")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uCurrETC!HIST_ID,"HIST_ID")
+	
+	'save Current Job Information
+	F.ODBC.Connection!conX.OpenLocalRecordsetRW("rst","Select * From GCG_RTR_hIST_Job")
+	F.Intrinsic.Control.If(V.uGlobal.uCurrJob.UBound,<>,-1)
+		F.Intrinsic.Variable.SaveUDTToRecordSet("conx","rst","v.uglobal.uCurrJob")
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conX!rst.Close
+
+
+	F.ODBC.Connection!conX.OpenLocalRecordsetRW("rst","Select * From GCG_RTR_hist_Die")
+	F.Intrinsic.Control.If(V.uGlobal.uCurrDie.UBound,<>,-1)
+		F.Intrinsic.Variable.SaveUDTToRecordSet("conX","rst","v.uglobal.uCurrDie")
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conX!rst.Close
+
+
+	F.ODBC.Connection!conX.OpenLocalRecordsetRW("rst","Select * From GCG_RTR_hiST_ETC")
+	F.Intrinsic.Control.If(V.uGlobal.uCurrEtc.UBound,<>,-1)
+		F.Intrinsic.Variable.SaveUDTToRecordSet("conx","rst","v.uglobal.uCurrETC")
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conX!rst.Close
+
+
+	'OUR DATA SHOULD HAVE BEEN MOVED FROM ORIGINAL TO HISTORY AND THATS ALL.
+	F.Intrinsic.String.Build("Delete From GCG_RTR_Curr_Job Where Part = '{0}'",V.Global.sPart,V.Local.sSQL)
+	F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+	'save current Die
+	F.Intrinsic.String.Build("Delete From GCG_RTR_Curr_Die Where Rec_ID = '{0}'",V.Global.iRecID,V.Local.sSQL)
+	F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+	'save Current ETC values
+	F.Intrinsic.String.Build("Delete From GCG_RTR_Curr_ETC Where REC_ID = '{0}'",V.Global.iRecID,V.Local.sSQL)
+	F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uCurrJob!HIST_ID,"")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uCurrDie!HIST_DIE,"")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uCurrETC!HIST_ID,"")
+	F.Intrinsic.Control.CallSub(Load_curr_jobs)
+	F.Intrinsic.Control.CallSub(Load_hist_jobs)
+	Gui.SS_Form1.gsfgJobs.Visible(False)
+	F.Intrinsic.Control.CallSub(Load_screen)
+	Gui.SS_Form1.gsfgJobs.Visible(True)
+		
+	F.Intrinsic.Control.UnBlockEvents
+	F.Intrinsic.UI.CloseWaitDialog
+F.Intrinsic.Control.Endif
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdmovecurrent_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_1.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmdmovecurrent_click.end
+
+Program.Sub.Load_Hist_Jobs.Start
+F.Intrinsic.Control.SetErrorHandler("Load_Hist_Jobs_Err")
+F.intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sUDTString.Declare(String)
+V.Local.sDie.Declare(String)
+V.Local.sETC.Declare(String)
+
+V.Local.iID.Declare(Long)
+V.Local.iC.Declare(Long)
+
+'use this variable for if we know whether or not we have records.
+V.Local.bExists.Declare(Boolean)
+'Grab all our history jobs that have been moved to history and all those etc and die sizes of theirs.
+F.Intrinsic.String.Build("Select * From GCG_RTR_Hist_Job Where Part = '{0}' Order By Hist_ID",V.Global.sPart,V.local.sSQL)
+F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+	V.Local.bExists.Set(True)
+	F.Intrinsic.Variable.LoadUDTFromRecordset("conX","rst","v.uglobal.uHistJob",False)
+F.Intrinsic.Control.Else
+	'if recordset doesn't exist we are going to build our udt now.
+	'helps speed up the textmatrxi updating of the flexgrid when they change an item.
+	V.Local.bExists.Set(False)
+	V.uGlobal.uHistJOb.Redim(0,4)
+	F.Intrinsic.Control.For(V.Local.iC,0,V.uGlobal.uHistJOb.UBound,1)
+		F.Intrinsic.Math.Add(V.Local.iC,1,V.Local.iID)
+		V.uGlobal.uHistJOb(v.local.iC)!HIST_ID.Set(V.Local.iID)
+	F.Intrinsic.Control.Next(V.Local.iC)
+F.Intrinsic.Control.EndIf
+F.ODBC.conX!rst.Close
+
+
+F.Intrinsic.Control.If(V.uGlobal.uHistJOb.UBound,<>,-1)
+'	havetoloopthroughoutudtsincewehavemorethanonerecordinthereandeachrecordcouldhaveit'sownetcanddiesizeinformation
+	F.Intrinsic.Control.For(V.Local.iID,0,V.uGlobal.uHistJOb.UBound,1)
+		F.Intrinsic.String.Build("Select * From GCG_RTR_HIST_DIE Where Rec_ID ='{0}' Order By Die_NO",V.uGlobal.uHistJOb(v.Local.iID)!REC_ID,V.Local.sSQL)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+			F.Intrinsic.Variable.LoadUDTFromRecordset("conX","rst","v.uglobal.uHistDie",False)
+		F.Intrinsic.Control.Else
+			'fake data to load it	
+			'only want to go through the 1 through 20 loop once, causde it will be the same for all hopefully.
+			F.Intrinsic.Control.If(V.Local.sUDTString.Trim,=,"")
+				F.Intrinsic.Control.For(V.Local.iC,1,20,1)
+					F.Intrinsic.Control.If(V.Local.sUDTString.Trim,=,"")
+						V.Local.sUDTString.Set(V.Local.iC)
+					F.Intrinsic.Control.Else
+						F.Intrinsic.String.Build("{0}*!*{1}",V.Local.sUDTString,V.Local.iC,V.Local.sUDTString)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.Next(V.Local.iC)
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.If(V.Local.sDie.Trim,=,"")
+				F.Intrinsic.String.Build("{0}*!*{1}",V.uglobal.uHistJob(v.local.iid)!Hist_ID,V.Local.sUDTString,V.Local.sDie)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Build("{2}@!@{0}*!*{1}",V.uglobal.uHistJob(v.local.iid)!Hist_ID,V.Local.sUDTString,V.Local.sDie,V.Local.sDie)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conX!rst.Close
+		F.Intrinsic.String.Build("Select * From GCG_RTR_HIST_ETC Where Rec_ID ='{0}' Order By ETC_NO",V.uGlobal.uHistJOb(v.Local.iID)!REC_ID,V.Local.sSQL)
+		F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+			F.Intrinsic.Variable.LoadUDTFromRecordset("conX","rst","v.uglobal.uHISTETC",False)
+		F.Intrinsic.Control.Else
+		'fake data to load it	
+			'only want to go through the 1 through 20 loop once, causde it will be the same for all hopefully.
+			F.Intrinsic.Control.If(V.Local.sUDTString.Trim,=,"")
+				F.Intrinsic.Control.For(V.Local.iC,1,20,1)
+					F.Intrinsic.Control.If(V.Local.sUDTString.Trim,=,"")
+						V.Local.sUDTString.Set(V.Local.iC)
+					F.Intrinsic.Control.Else
+						F.Intrinsic.String.Build("{0}*!*{1}",V.Local.sUDTString,V.Local.iC,V.Local.sUDTString)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.Next(V.Local.iC)
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.If(V.Local.sETC.Trim,=,"")
+				F.Intrinsic.String.Build("{0}*!*{1}",V.uglobal.uHistJob(v.local.iid)!Hist_ID,V.Local.sUDTString,V.Local.sETC)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Build("{2}@!@{0}*!*{1}",V.uglobal.uHistJob(v.local.iid)!Hist_ID,V.Local.sUDTString,V.Local.sETC,V.Local.sETc)
+			F.Intrinsic.Control.EndIF
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conX!rst.Close
+	F.Intrinsic.Control.Next(V.Local.iID)
+F.Intrinsic.Control.EndIf
+
+'WRITE THE STRING WE BUILT TO OUR UHISTDIE UDT
+
+F.Intrinsic.Control.If(V.Local.sDie.Trim,<>,"")
+	F.Intrinsic.Variable.LoadUDTFromString(V.uGlobal.uHistDie,"HIST_ID*!*DIE_NO",V.Local.sDie,"@!@","*!*",True)
+F.Intrinsic.Control.EndIf
+'WRITE THE STRING WE BUILT TO OUR UHISTETC UDT
+F.Intrinsic.Control.If(V.Local.sETC.Trim,<>,"")
+	F.Intrinsic.Variable.LoadUDTFromString(V.uGlobal.uHistETC,"HIST_ID*!*ETC_NO",V.Local.sETC,"@!@","*!*",True)
+F.Intrinsic.Control.EndIf
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Load_Hist_Jobs_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_1.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+
+Program.Sub.Load_Hist_Jobs.End
+
+Program.Sub.Load_Screen.Start
+F.Intrinsic.Control.SetErrorHandler("Load_Screen_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iC.Declare(Long)
+V.Local.iRows.Declare(Long)
+V.Local.sREt.Declare(String)
+V.Local.iRet.Declare(Long)
+V.Local.sItem.Declare(String)
+V.Local.sRow.Declare(String)
+V.Local.sFlxGrid.Declare(String)
+V.Local.sCurrOrd.Declare(String)
+V.Local.sHistOrd.Declare(String)
+V.Local.sHistDie.Declare(String)
+V.Local.sHistETC.Declare(String)
+V.Local.iR.Declare(Long)
+V.Local.sCols.Declare(String)
+
+V.Local.sCols.Redim(3,8)
+V.Local.sHistOrd.Redim(1,5)
+V.Local.sHistETC.Redim(1,5)
+V.Local.sHistDie.Redim(1,5)
+
+'get our total row count
+F.Intrinsic.Math.Sub(V.Screen.SS_Form1!gsfgJobs.Rows,1,V.Local.iRows)
+'V.Local.sFlxGrid.redim(0,V.Screen.SS_Form1!gsfgJobs.Rows)
+
+
+'grab our ordinals for our history information, if we order them we may or may not have the right ones.
+F.Intrinsic.Control.For(V.Local.iC,1,5,1)
+	F.Intrinsic.Variable.UDTMultiSeek(V.uGlobal.uHistJOb!HIST_ID,V.Local.iC,V.Local.sHistOrd(v.Local.iC))
+	F.Intrinsic.Variable.udtmultiseek(V.uGlobal.uHistEtc!HIST_ID,V.Local.iC,V.Local.sHistETC(v.Local.iC))
+	F.Intrinsic.Variable.UDTMultiSeek(V.uGlobal.uHistDie!HIST_ID,V.Local.iC,V.Local.sHistDie(v.Local.iC))
+F.Intrinsic.Control.Next(V.Local.iC)
+
+
+
+
+F.Intrinsic.Control.For(V.Local.iC,1,V.Local.irows,1)
+	'rows delimiter is !*! and column is *!*
+	'here we go this is going to be really fun.
+	'every row we we read our udt element that is for this row.
+	'SO since the flexgrid using to string is wonky at times.We are just going to write it directorly That way we don't wast time going back and forth against everything.
+	Gui.SS_Form1.gsfgJobs.ReadRow(V.Local.iC,V.Local.sRow)
+	F.Intrinsic.String.Split(V.Local.sRow,"*!*",V.Local.sRow)
+	V.Local.sItem.Set(V.Local.sRow(1).UCase)
+	'now start at column 3 to ubound
+	F.Intrinsic.Control.For(V.Local.iR,3,V.Local.sRow.UBound,1)
+		F.Intrinsic.Control.SelectCase(V.Local.iR)
+			F.Intrinsic.Control.Case(3)
+				'current information
+				F.Intrinsic.Control.If(V.Local.iC,<,22)
+					F.Intrinsic.Control.If(V.uGlobal.uCurrJob.UBound,<>,-1)
+						Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uCurrJob(0)![v.local.sItem.Trim])
+						
+					F.Intrinsic.Control.Else
+						'leave it alone?
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.ElseIf(V.Local.ic,>=,22)
+				F.Intrinsic.Control.AndIf(V.Local.iC,<,42)
+					'we know it's either die or etc.
+					F.Intrinsic.String.Split(V.Local.sRow(1).Ucase,"_",V.Local.sItem)
+					F.Intrinsic.Control.If(V.uGlobal.uCurrDie.UBound,<>,-1)
+						F.Intrinsic.Variable.UDTMultiSeek(V.uGlobal.uCurrDie!Die_NO,V.Local.sItem(1),V.Local.sREt)
+						F.Intrinsic.Control.If(V.local.sRet.Trim,<>,"")
+							F.Intrinsic.String.Split(V.local.sRet,"*!*",V.local.sREt)
+							Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uCurrDie(v.Local.sREt(0))!DIE_SIZE_TXT)
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.ElseIf(V.Local.iC,>=,42)
+					F.Intrinsic.Control.If(V.uGlobal.uCurrEtc.UBound,<>,-1)
+						'we know it's either die or etc.
+						F.Intrinsic.String.Split(V.Local.sRow(1).Ucase,"_",V.Local.sItem)
+						F.Intrinsic.Control.If(V.uGlobal.uCurrEtc.UBound,<>,-1)
+							F.Intrinsic.Variable.UDTMultiSeek(V.uGlobal.uCurrEtc!ETC_NO,V.Local.sItem(1),V.Local.sREt)
+							F.Intrinsic.Control.If(V.local.sRet.Trim,<>,"")
+								F.Intrinsic.String.Split(V.local.sRet,"*!*",V.local.sREt)
+								Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uCurrEtc(v.Local.sREt(0))!ETC_VALUE)
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.endif
+			F.Intrinsic.Control.Case(4)
+				'history 1
+				F.Intrinsic.Control.If(V.Local.sHistOrd(1).Trim,<>,"")
+					F.Intrinsic.Control.If(V.Local.iC,<,22)
+						 Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistJOb(v.Local.sHistOrd(1))![v.local.sItem.Trim])
+					F.Intrinsic.Control.ElseIf(V.local.ic,>=,22)
+					F.Intrinsic.Control.AndIf(V.Local.iC,<,42)
+						'die information
+						F.Intrinsic.Control.If(V.Local.sHistDie(1).Trim,<>,"")
+							F.Intrinsic.String.Split(V.Local.sRow(1).Ucase,"_",V.Local.sItem)
+							'need to have both history id and die number
+							F.Intrinsic.Variable.UDTMultiSeek(V.uGlobal.uHistDie!HIST_ID,1,V.uGlobal.uHistDie!DIE_NO,V.Local.sItem(1),V.Local.sREt)
+							F.Intrinsic.Control.If(V.Local.sREt.Trim,<>,"")
+								F.Intrinsic.String.Split(V.Local.sREt,"*!*",V.Local.sRet)
+								Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistDie(v.Local.sREt(0))!DIE_SIZE_TXT)
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.ElseIF(V.Local.iC,>=,42)
+						F.Intrinsic.String.Split(V.Local.sRow(1).Ucase,"_",V.Local.sItem)
+						F.Intrinsic.Control.If(V.Local.sHistETC(1).Trim,<>,"")
+							F.Intrinsic.Variable.UDTMultiSeek(V.uglobal.uHistETC!HIST_ID,1,V.uGlobal.uHistETC!ETC_NO,V.Local.sItem(1),V.Local.sREt)
+							F.Intrinsic.Control.If(V.Local.sREt.Trim,<>,"")
+								F.Intrinsic.String.Split(V.Local.sREt,"*!*",V.Local.sREt)
+								 Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistETC(v.Local.sRet(0))!ETC_Value)
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.Case(5)
+				'history 2
+				F.Intrinsic.Control.If(V.Local.sHistOrd(2).Trim,<>,"")
+					F.Intrinsic.Control.If(V.Local.iC,<,22)
+						 Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistJOb(v.Local.sHistOrd(2))![v.local.sItem.Trim])
+					F.Intrinsic.Control.ElseIf(V.local.ic,>=,22)
+					F.Intrinsic.Control.AndIf(V.Local.iC,<,42)
+						F.Intrinsic.Control.If(V.Local.sHistDie(2).Trim,<>,"")
+							F.Intrinsic.String.Split(V.Local.sRow(1).Ucase,"_",V.Local.sItem)
+							'need to have both history id and die number
+							F.Intrinsic.Variable.UDTMultiSeek(V.uglobal.uHistDie!HIST_ID,2,V.uGlobal.uHistDie!DIE_NO,V.Local.sItem(1),V.Local.sREt)
+							F.Intrinsic.Control.If(V.Local.sREt.Trim,<>,"")
+								F.Intrinsic.String.Split(V.Local.sREt,"*!*",V.Local.sRet)
+								Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistDie(v.Local.sREt(0))!DIE_SIZE_TXT)
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.endif
+					F.Intrinsic.Control.ElseIF(V.Local.iC,>=,42)
+						F.Intrinsic.Control.If(V.Local.sHistETC(2).Trim,<>,"")
+							F.Intrinsic.String.Split(V.Local.sRow(1).Ucase,"_",V.Local.sItem)
+							F.Intrinsic.Variable.UDTMultiSeek(V.uglobal.uHistETC!HIST_ID,2,V.uGlobal.uHistETC!ETC_NO,V.Local.sItem(1),V.Local.sREt)
+							F.Intrinsic.Control.If(V.Local.sREt.Trim,<>,"")
+								F.Intrinsic.String.Split(V.Local.sREt,"*!*",V.Local.sREt)
+								 Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistETC(v.Local.sRet(0))!ETC_Value)
+							F.Intrinsic.Control.endif
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.ENdif
+			F.Intrinsic.Control.Case(6)
+				'history 3
+				F.Intrinsic.Control.If(V.Local.sHistOrd(3).Trim,<>,"")
+					F.Intrinsic.Control.If(V.Local.iC,<,22)
+						 Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistJOb(v.Local.sHistOrd(3))![v.local.sItem.Trim])
+					F.Intrinsic.Control.ElseIf(V.local.ic,>=,22)
+					F.Intrinsic.Control.AndIf(V.Local.iC,<,42)
+						F.Intrinsic.Control.If(V.Local.sHistDie(3).Trim,<>,"")
+							F.Intrinsic.String.Split(V.Local.sRow(1).Ucase,"_",V.Local.sItem)
+							'need to have both history id and die number
+							F.Intrinsic.Variable.UDTMultiSeek(V.uglobal.uHistDie!HIST_ID,2,V.uGlobal.uHistDie!DIE_NO,V.Local.sItem(1),V.Local.sREt)
+							F.Intrinsic.Control.If(V.Local.sREt.Trim,<>,"")
+								F.Intrinsic.String.Split(V.Local.sREt,"*!*",V.Local.sRet)
+								Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistDie(v.Local.sREt(0))!DIE_SIZE_TXT)
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.endif
+					F.Intrinsic.Control.ElseIF(V.Local.iC,>=,42)
+						F.Intrinsic.Control.If(V.Local.sHistETC(1).Trim,<>,"")
+						F.Intrinsic.String.Split(V.Local.sRow(1).Ucase,"_",V.Local.sItem)
+						F.Intrinsic.Variable.UDTMultiSeek(V.uglobal.uHistETC!HIST_ID,3,V.uGlobal.uHistETC!ETC_NO,V.Local.sItem(1),V.Local.sREt)
+							F.Intrinsic.Control.If(V.Local.sREt.Trim,<>,"")
+								F.Intrinsic.String.Split(V.Local.sREt,"*!*",V.Local.sREt)
+								 Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistETC(v.Local.sRet(0))!ETC_Value)
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.Case(7)
+				'history 4
+				F.Intrinsic.Control.If(V.Local.sHistOrd(4).Trim,<>,"")
+					F.Intrinsic.Control.If(V.Local.iC,<,22)
+						 Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistJOb(v.Local.sHistOrd(4))![v.local.sItem.Trim])
+					F.Intrinsic.Control.ElseIf(V.local.ic,>=,22)
+					F.Intrinsic.Control.AndIf(V.Local.iC,<,42)
+						F.Intrinsic.Control.If(V.Local.sHistDie(4).Trim,<>,"")
+							F.Intrinsic.String.Split(V.Local.sRow(1).Ucase,"_",V.Local.sItem)
+							'need to have both history id and die number
+							F.Intrinsic.Variable.UDTMultiSeek(V.uglobal.uHistDie!HIST_ID,4,V.uGlobal.uHistDie!DIE_NO,V.Local.sItem(1),V.Local.sREt)
+							F.Intrinsic.Control.If(V.Local.sREt.Trim,<>,"")
+								F.Intrinsic.String.Split(V.Local.sREt,"*!*",V.Local.sRet)
+								Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistDie(v.Local.sREt(0))!DIE_SIZE_TXT)
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.ElseIF(V.Local.iC,>=,42)
+						F.Intrinsic.Control.If(V.Local.sHistETC(4).Trim,<>,"")
+							F.Intrinsic.String.Split(V.Local.sRow(1).Ucase,"_",V.Local.sItem)
+							F.Intrinsic.Variable.UDTMultiSeek(V.uglobal.uHistETC!HIST_ID,4,V.uGlobal.uHistETC!ETC_NO,V.Local.sItem(1),V.Local.sREt)
+							F.Intrinsic.Control.If(V.Local.sREt.Trim,<>,"")
+								F.Intrinsic.String.Split(V.Local.sREt,"*!*",V.Local.sREt)
+								 Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistETC(v.Local.sRet(0))!ETC_Value)
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.endif
+			F.Intrinsic.Control.Case(8)
+				'history 5
+				F.Intrinsic.Control.If(V.Local.sHistOrd(5).Trim,<>,"")
+					F.Intrinsic.Control.If(V.Local.iC,<,22)
+						 Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistJOb(v.Local.sHistOrd(5))![v.local.sItem.Trim])
+					F.Intrinsic.Control.ElseIf(V.local.ic,>=,22)
+					F.Intrinsic.Control.AndIf(V.Local.iC,<,42)
+						F.Intrinsic.Control.If(V.Local.sHistDie(5).Trim,<>,"")
+							F.Intrinsic.String.Split(V.Local.sRow(1).Ucase,"_",V.Local.sItem)
+							'need to have both history id and die number
+							F.Intrinsic.Variable.UDTMultiSeek(V.uglobal.uHistDie!HIST_ID,5,V.uGlobal.uHistDie!DIE_NO,V.Local.sItem(1),V.Local.sREt)
+							F.Intrinsic.Control.If(V.Local.sREt.Trim,<>,"")
+								F.Intrinsic.String.Split(V.Local.sREt,"*!*",V.Local.sRet)
+								Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistDie(v.Local.sREt(0))!DIE_SIZE_TXT)
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.ElseIF(V.Local.iC,>=,42)
+						F.Intrinsic.Control.If(V.Local.sHistETC(5).Trim,<>,"")
+							F.Intrinsic.String.Split(V.Local.sRow(1).Ucase,"_",V.Local.sItem)
+							F.Intrinsic.Variable.UDTMultiSeek(V.uglobal.uHistETC!HIST_ID,5,V.uGlobal.uHistETC!ETC_NO,V.Local.sItem(1),V.Local.sREt)
+							F.Intrinsic.Control.If(V.Local.sREt.Trim,<>,"")
+								F.Intrinsic.String.Split(V.Local.sREt,"*!*",V.Local.sREt)
+								 Gui.SS_Form1.gsfgJobs.TextMatrix(V.local.iR,V.local.iC,V.uGlobal.uHistETC(v.Local.sRet(0))!ETC_Value)
+							F.Intrinsic.Control.endif
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.CaseElse
+				F.Intrinsic.Debug.SetLA("row count can't be determined by this select case, iR value: ",V.Local.iR)
+		F.Intrinsic.Control.EndSelect
+	F.Intrinsic.Control.Next(V.Local.iR)
+F.Intrinsic.Control.Next(V.Local.iC)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Load_Screen_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_1.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Load_Screen.End
+
+program.sub.cmdsave_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdsave_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+
+F.Intrinsic.Control.If(V.Global.iRecID,=,0)
+	'meaning we haven't had any recs created yet, lets do get id.
+	F.ODBC.Connection!conX.GetID("GCG_RTR_Curr_Job","REC_ID",True,v.Global.iRecID)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uCurrJob!REC_ID,V.Global.iRecID)
+F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uCurrDie!REC_ID,V.Global.iRecID)
+F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uCurrEtc!REC_ID,V.Global.iRecID)
+F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uHistJOb!REC_ID,V.Global.iRecID)
+F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uHistDie!Rec_ID,V.Global.iRecID)
+F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uHistEtc!REC_ID,V.Global.iRecID)
+
+
+'saveourscreeninformation
+F.Intrinsic.String.Build("Delete From GCG_RTR_Curr_Job Where Part = '{0}'",V.Global.sPart,V.Local.sSQL)
+F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+
+'save Current Job Information
+F.ODBC.Connection!conX.OpenLocalRecordsetRW("rst","Select * From GCG_RTR_Curr_Job")
+F.Intrinsic.Control.If(V.uGlobal.uCurrJob.UBound,<>,-1)
+	F.Intrinsic.Variable.SaveUDTToRecordSet("conx","rst","v.uglobal.uCurrJob")
+F.Intrinsic.Control.EndIf
+F.ODBC.conX!rst.Close
+
+'save current Die
+F.Intrinsic.String.Build("Delete From GCG_RTR_Curr_Die Where Rec_ID = '{0}'",V.Global.iRecID,V.Local.sSQL)
+F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+F.ODBC.Connection!conX.OpenLocalRecordsetRW("rst","Select * From GCG_RTR_Curr_Die")
+F.Intrinsic.Control.If(V.uGlobal.uCurrDie.UBound,<>,-1)
+	F.Intrinsic.Variable.SaveUDTToRecordSet("conX","rst","v.uglobal.uCurrDie")
+F.Intrinsic.Control.EndIf
+F.ODBC.conX!rst.Close
+
+'save Current ETC values
+F.Intrinsic.String.Build("Delete From GCG_RTR_Curr_ETC Where REC_ID = '{0}'",V.Global.iRecID,V.Local.sSQL)
+F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+F.ODBC.Connection!conX.OpenLocalRecordsetRW("rst","Select * From GCG_RTR_Curr_ETC")
+F.Intrinsic.Control.If(V.uGlobal.uCurrEtc.UBound,<>,-1)
+	F.Intrinsic.Variable.SaveUDTToRecordSet("conx","rst","v.uglobal.uCurrETC")
+F.Intrinsic.Control.EndIf
+F.ODBC.conX!rst.Close
+
+F.Intrinsic.UI.Msgbox("Current Job Information Saved...")
+
+''rec id needs/should be carried over throughout the entire tables.
+'F.Intrinsic.String.Build("Delete From GCG_RTR_Hist_Job Where REC_ID = '{0}'",V.Global.iRecID,V.local.sSQL)
+'F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+'F.ODBC.Connection!conX.OpenLocalRecordsetRw("rst","Select * From GCG_Rtr_Hist_Job")
+'F.Intrinsic.Control.If(V.uGlobal.uHistJOb.UBound,<>,-1)
+'	F.Intrinsic.Variable.SaveUDTToRecordSet("conx","rst","V.uglobal.uHistJob")
+'F.Intrinsic.Control.EndIf
+'F.ODBC.conX!rst.Close
+'
+'F.Intrinsic.String.Build("Delete From GCG_RTR_Hist_ETC Where REC_ID = '{0}'",V.Global.iRecID,V.local.sSQL)
+'F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+'F.ODBC.Connection!conX.OpenLocalRecordsetRw("rst","Select * From GCG_Rtr_Hist_ETC")
+'F.Intrinsic.Control.If(V.uGlobal.uHistETC.UBound,<>,-1)
+'	F.Intrinsic.Variable.SaveUDTToRecordSet("conx","rst","V.uglobal.uHistETC")
+'F.Intrinsic.Control.EndIf
+'F.ODBC.conX!rst.Close
+'
+'F.Intrinsic.String.Build("Delete From GCG_RTR_Hist_DIE Where REC_ID = '{0}'",V.Global.iRecID,V.local.sSQL)
+'F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+'F.ODBC.Connection!conX.OpenLocalRecordsetRw("rst","Select * From GCG_Rtr_Hist_ETC")
+'F.Intrinsic.Control.If(V.uGlobal.uHISTDIE.UBound,<>,-1)
+'	F.Intrinsic.Variable.SaveUDTToRecordSet("conx","rst","V.uglobal.uHistDIE")
+'F.Intrinsic.Control.EndIf
+'F.ODBC.conX!rst.Close
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdsave_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_1.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdsave_click.end
+
+program.sub.gsfgjobs_posttextmatrix.start
+F.Intrinsic.Control.SetErrorHandler("gsfgjobs_posttextmatrix_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.local.sItem.Declare(String)
+V.Local.iR.Declare(Long)
+V.Local.sVal.Declare(String)
+V.Local.sT.Declare(String)
+V.Local.bNum.Declare(Boolean)
+V.Local.sRet.Declare(String)
+'this subroutine will be our catalyst to determine what column we are in,
+'depending on the column we are going a particular sub to save the information
+'column 2: current
+'column >2: history, not editble
+F.Intrinsic.Control.BlockEvents
+F.Intrinsic.Control.If(V.Args.key,>=,1)
+	F.Intrinsic.Control.If(V.Args.column,=,3)
+		'meaning not the header row and not the item column data		
+		'read our column and update what we need to in our udt
+		Gui.SS_Form1.gsfgJobs.Commit
+		Gui.SS_Form1.gsfgJobs.GetTextMatrix(1,V.Args.key,V.Local.sItem)
+		Gui.SS_Form1.gsfgJobs.GetTextMatrix(3,V.Args.key,V.Local.sVal)
+		'make sure that it's not either die or etc number values cause those are seperate udt
+		F.Intrinsic.Control.If(V.Local.sItem.Trim,=,"DIE_NO")
+			f.Intrinsic.Variable.SetNumeric(v.Local.sVal.Trim,0,v.local.sVal)
+			V.uGlobal.uCurrJob(0)![v.local.sItem.Trim].Set(V.Local.sVal.Float)
+			Gui.SS_Form1.gsfgJobs.TextMatrix(V.Args.column,V.Args.key,V.Local.sVal.Float)
+		F.Intrinsic.Control.ElseIf(V.Local.sItem.Left4,=,"DIE_")
+			'figure out which die item it was so we can update it.
+			'this should always be in there. if it's not we did't do our PROGRAM right.
+			F.Intrinsic.String.Split(V.Local.sItem,"_",V.Local.sT)
+			F.Intrinsic.Variable.UDTMultiSeek(V.uGlobal.uCurrDie!DIE_NO,V.Local.sT(1),V.local.sRet)
+			F.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"")
+				F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+				'should only be one but lets hope that it's not more than one.
+				F.Intrinsic.Control.For(V.Local.iR,0,V.Local.sRet.UBound,1)
+					V.uGlobal.uCurrDie(v.Local.sRet(v.Local.iR))!DIE_SIZE_TXT.Set(V.Local.sVal.Trim)
+				F.Intrinsic.Control.Next(V.Local.iR)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.ElseIf(V.Local.sItem.left4,=,"ETC_")
+			'figure out which die item it was so we can update it.
+			'this should always be in there. if it's not we did't do our PROGRAM right.
+			F.Intrinsic.String.Split(V.Local.sItem,"_",V.Local.sT)
+			F.Intrinsic.Variable.UDTMultiSeek(V.uGlobal.uCurrEtc!ETC_NO,V.Local.sT(1).Long,V.Local.sRet)
+			F.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"")
+				F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+				'should only be one but lets hope that it's not more than one.
+				F.Intrinsic.Control.For(V.Local.iR,0,V.Local.sRet.UBound,1)
+					V.uGlobal.uCurrEtc(v.local.sRet(v.Local.iR))!ETC_Value.Set(V.Local.sVal.Trim)
+				F.Intrinsic.Control.Next(V.Local.iR)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Else
+			V.Local.sT.Set("PRESS_THICKNESS*!*NIB_THICKNESS*!*MIC*!*CHOKE_DEPTH*!*GREEN_VOLUME*!*GREEN_DENSITY*!*CALCULATED*!*ACT_VOLUME*!*SHRINKAGE*!*UNDER_FILL*!*CONTOUR_FILL_1*!*CONTOUR_FILL_2*!*TOP_PRESS*!*BOTTOM_PRESS*!*ADJ_PRESS_QTY*!*CAVITY_NO")
+			F.Intrinsic.String.IsInString(V.Local.sT.Trim,V.Local.sItem,True,V.Local.bNum)
+			F.Intrinsic.Control.If(V.Local.bNum,=,True)
+				'this function will check and see if the value we are passing it is numeric, if not it will default to zero and we can save it.
+				'if it is a number it will uphold the number.
+				f.Intrinsic.Variable.SetNumeric(v.Local.sVal.Trim,0,v.local.sVal)
+				V.uGlobal.uCurrJob(0)![v.local.sItem.Trim].Set(V.Local.sVal.Float)
+				'we should probably upate this cell so they don't think it's saving a non-numeric value
+				Gui.SS_Form1.gsfgJobs.TextMatrix(V.Args.column,V.Args.key,V.Local.sVal.Float)
+			F.Intrinsic.Control.Else
+				'this is our regulra udt that keeps our job hist
+				'this should only be element 0 cause that the way our program is set up as.
+				V.uGlobal.uCurrJob(0)![v.local.sItem.Trim].Set(V.Local.sVal)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.UnBlockEvents
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("gsfgjobs_posttextmatrix_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_1.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.gsfgjobs_posttextmatrix.end
+
+Program.Sub.Load_Header.Start
+F.Intrinsic.Control.SetErrorHandler("Load_Header_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sRet.Declare(String)
+V.local.sCust.Declare(String)
+V.Local.iR.Declare(Long)
+
+'grab our information from the router header?
+'part
+Gui.SS_Form1.txtPart.Text(V.Passed.000014)
+'rev
+Gui.SS_Form1.txtRev.Text(V.Passed.000015)
+
+'get sort code and pl from the inventory header if the pl is blank up on the screen of the router.
+F.Global.Inventory.GetPartInfo(V.Passed.000014,V.Passed.000015,"",V.Local.sRet)
+F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+F.Intrinsic.Control.If(V.Passed.000037.Trim,=,"")
+	'PL from inventory master must do.
+	Gui.SS_Form1.txtPL.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.Else
+	Gui.SS_Form1.txtPL.Text(V.Passed.000037)
+F.Intrinsic.Control.EndIf
+
+Gui.SS_Form1.txtSortCode.Text(V.Local.sRet(6).Trim)
+
+'cust x ref
+V.Local.sCust.Set(V.Passed.000027)
+F.Intrinsic.Control.If(V.Local.sCust.Trim,<>,"")
+	Gui.SS_Form1.txtCustXRef.Text(V.Local.sCust.Trim)
+	F.Intrinsic.String.Build("Select * From V_INV_Cross_Ref Where Part = '{0}' And Customer = '{1}'",V.Global.sPart,V.Local.sCust,V.Local.sSQL)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+		'grab our customer part number and place it in the text box. we are only grabbing the first one so if they have multiple things in there we are not
+		'grabbing the second one or what.
+		Gui.SS_Form1.txtPartxRef.Text(V.ODBC.conX!rst.FieldValTrim!Customer_Part)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conX!rst.Close
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Load_Header_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_1.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Load_Header.End
+
+Program.Sub.Check_Security.Start
+F.Intrinsic.Control.SetErrorHandler("Check_Security_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sGroups.Declare(String)
+V.Local.sUser.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.iID.Declare(Long)
+V.Local.iG.Declare(Long)
+V.Local.bR.Declare(Boolean)
+V.Local.bRW.Declare(Boolean,False)
+
+
+F.Global.Security.GetuserID(V.Caller.User,V.Caller.CompanyCode,V.Local.iID)
+F.Intrinsic.String.Build("Select U_G_Name,Flag_R, Flag_RW From GCG_Styles_Security Where User_Group_Flag = 'U' And U_G_ID = '{0}'",V.Local.iID,V.Local.sSQL)
+F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+	F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldValTrim!Flag_RW,=,1)
+		V.Local.bRW.Set(True)
+	F.Intrinsic.Control.Else
+		V.Local.bRW.Set(False)
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldValTrim!Flag_R,=,1)
+		V.Local.bR.Set(True)
+	F.Intrinsic.Control.Else
+		V.Local.bR.Set(False)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conX!rst.Close
+F.Intrinsic.Control.Else
+	F.ODBC.conX!rst.Close
+	'look for groupies.
+	F.Global.Security.GetUserGroupsByID(v.Caller.User,v.Caller.CompanyCode,v.Local.sGroups)
+	F.Intrinsic.Control.If(V.Local.sGroups.Trim,<>,"")
+		F.Intrinsic.String.Split(V.Local.sGroups,"*!*",V.Local.sGroups)
+		F.Intrinsic.Control.For(V.Local.iG,0,V.Local.sGroups.UBound,1)
+			F.Intrinsic.String.Build("Select * From GCG_Styles_Security Where USer_Group_Flag = 'G' And U_G_ID = '{0}'",V.Local.sGroups(v.Local.iG).Trim,V.Local.sSQL)
+			F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+			F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,<>,True)
+				'read the values
+				F.Intrinsic.Control.If(V.ODBC.conX!rst.fieldvalTrim!Flag_RW,=,1)
+					V.Local.bRW.Set(True)
+				F.Intrinsic.Control.Else
+					V.Local.bRW.Set(False)
+				F.Intrinsic.Control.EndIf
+				
+				F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldValTrim!Flag_R,=,1)
+					V.Local.bR.Set(True)
+				F.Intrinsic.Control.Else
+					V.Local.bR.Set(False)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+			F.ODBC.conX!rst.Close
+			F.Intrinsic.Control.If(V.Local.bRW,=,True)
+				F.Intrinsic.Control.ExitFor(V.Local.iG)
+			F.Intrinsic.Control.ElseIf(V.Local.bR,=,True)
+				F.Intrinsic.Control.ExitFor(V.Local.iG)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Next(V.Local.iG)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Local.bRW,=,True)
+	'used lter on in my buildstyle
+	V.Global.bRWGRid.Set(False)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.ElseIf(V.Local.bR,=,True)
+	'used later on in my buildstyle cause disabling the grid aint so pretty.
+	V.Global.bRWGRid.Set(True)
+	'view only man
+	Gui.SS_Form1.cmdMoveCurrent.Visible(False)
+	Gui.SS_Form1.cmdSave.Visible(False)
+	Gui.SS_Form1.cmdMoveCurrent.Enabled(False)
+
+	Gui.SS_Form1.cmdSave.Enabled(False)
+
+'	Gui.SS_Form1.gsfgJobs.Enabled(False)
+F.Intrinsic.Control.else
+	F.Intrinsic.UI.Msgbox("You do not have proper permission to access this inormation...")
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Check_Security_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_RTR_Style_Sheet_1.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Check_Security.End
+
+
